@@ -73,7 +73,7 @@ const TravelerCard: React.FC<TravelerCardProps> = ({
               style={{
                 fontSize: 15,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             >
               {traveler.name}
@@ -88,7 +88,7 @@ const TravelerCard: React.FC<TravelerCardProps> = ({
               style={{
                 fontSize: 13,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
               }}
             >
               {traveler.country}
@@ -100,7 +100,7 @@ const TravelerCard: React.FC<TravelerCardProps> = ({
               style={{
                 fontSize: 11,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
                 marginTop: 1,
               }}
             >
@@ -117,7 +117,7 @@ const TravelerCard: React.FC<TravelerCardProps> = ({
           style={{
             fontSize: 13,
             fontFamily: 'SourceSerif4-Regular',
-            color: '#4A4A4A',
+            color: '#3C3C3C',
             lineHeight: 18,
             marginBottom: 10,
           }}

@@ -5,20 +5,20 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as Haptics from 'expo-haptics';
 import {
-  Compass,
-  Search,
+  Home,
+  Map,
   PlusCircle,
-  Bell,
+  MessageCircle,
   User,
   type LucideIcon,
 } from 'lucide-react-native';
 
 import type {
   MainTabParamList,
-  ExploreStackParamList,
-  SearchStackParamList,
+  HomeStackParamList,
+  MapStackParamList,
   CreateStackParamList,
-  ActivityStackParamList,
+  ChatStackParamList,
   ProfileStackParamList,
 } from './types';
 
@@ -40,11 +40,17 @@ import CreateEventScreen from '../features/events/CreateEventScreen';
 
 import ActivityHomeScreen from '../features/notifications/ActivityScreen';
 import ChatThreadScreen from '../features/chat/ChatDetailScreen';
+import ConversationListScreen from '../features/chat/ConversationListScreen';
 
 import ProfileHomeScreen from '../features/profile/MyProfileScreen';
 import EditProfileScreen from '../features/profile/EditProfileScreen';
 import SettingsScreen from '../features/profile/SettingsScreen';
 import HostDashboardScreen from '../features/dashboard/DashboardScreen';
+
+import MapScreen from '../features/map/MapScreen';
+import ConversationScreen from '../features/explore/ConversationScreen';
+import ConversationsHubScreen from '../features/explore/ConversationsHubScreen';
+import EventsHubScreen from '../features/explore/EventsHubScreen';
 
 // ── Placeholder for screens not yet built ─────
 const PlaceholderScreen: React.FC<{ name: string }> = ({ name }) => (
@@ -59,6 +65,7 @@ const CreateExperienceScreen = () => <PlaceholderScreen name="New Experience" />
 const CreateStoryScreen = () => <PlaceholderScreen name="New Story" />;
 const BookingDetailScreen = () => <PlaceholderScreen name="Booking" />;
 const BookingHistoryScreen = () => <PlaceholderScreen name="Bookings" />;
+const EventChatScreen = () => <PlaceholderScreen name="Event Chat" />;
 
 // ──────────────────────────────────────────────
 // Tab Stack Navigators
@@ -66,32 +73,35 @@ const BookingHistoryScreen = () => <PlaceholderScreen name="Bookings" />;
 
 const stackScreenOptions = {
   headerShown: false,
-  contentStyle: { backgroundColor: '#FAF8F4' },
+  contentStyle: { backgroundColor: '#FFFFFF' },
 } as const;
 
-// Explore
-const ExploreStack = createNativeStackNavigator<ExploreStackParamList>();
-const ExploreStackNavigator: React.FC = () => (
-  <ExploreStack.Navigator screenOptions={stackScreenOptions}>
-    <ExploreStack.Screen name="Home" component={HomeScreen} />
-    <ExploreStack.Screen name="CityPulse" component={CityPulseScreen} />
-    <ExploreStack.Screen name="ExperienceDetail" component={ExperienceDetailScreen} />
-    <ExploreStack.Screen name="HostProfile" component={HostProfileScreen} />
-    <ExploreStack.Screen name="Checkout" component={CheckoutScreen} />
-    <ExploreStack.Screen name="BookingConfirmation" component={BookingConfirmationScreen} />
-  </ExploreStack.Navigator>
+// Home (Live Now + Do Safaar live inside HomeScreen)
+const HomeStack = createNativeStackNavigator<HomeStackParamList>();
+const HomeStackNavigator: React.FC = () => (
+  <HomeStack.Navigator screenOptions={stackScreenOptions}>
+    <HomeStack.Screen name="Home" component={HomeScreen} />
+    <HomeStack.Screen name="CityPulse" component={CityPulseScreen} />
+    <HomeStack.Screen name="ExperienceDetail" component={ExperienceDetailScreen} />
+    <HomeStack.Screen name="HostProfile" component={HostProfileScreen} />
+    <HomeStack.Screen name="Checkout" component={CheckoutScreen} />
+    <HomeStack.Screen name="BookingConfirmation" component={BookingConfirmationScreen} />
+    <HomeStack.Screen name="Search" component={SearchHomeScreen} />
+    <HomeStack.Screen name="SearchResults" component={SearchResultsScreen} />
+    <HomeStack.Screen name="Activity" component={ActivityHomeScreen} />
+    <HomeStack.Screen name="Conversation" component={ConversationScreen} />
+    <HomeStack.Screen name="ConversationsHub" component={ConversationsHubScreen} />
+    <HomeStack.Screen name="EventsHub" component={EventsHubScreen} />
+  </HomeStack.Navigator>
 );
 
-// Search
-const SearchStack = createNativeStackNavigator<SearchStackParamList>();
-const SearchStackNavigator: React.FC = () => (
-  <SearchStack.Navigator screenOptions={stackScreenOptions}>
-    <SearchStack.Screen name="SearchHome" component={SearchHomeScreen} />
-    <SearchStack.Screen name="SearchResults" component={SearchResultsScreen} />
-    <SearchStack.Screen name="CityPulse" component={CityPulseScreen} />
-    <SearchStack.Screen name="ExperienceDetail" component={ExperienceDetailScreen} />
-    <SearchStack.Screen name="HostProfile" component={HostProfileScreen} />
-  </SearchStack.Navigator>
+// Map
+const MapStack = createNativeStackNavigator<MapStackParamList>();
+const MapStackNavigator: React.FC = () => (
+  <MapStack.Navigator screenOptions={stackScreenOptions}>
+    <MapStack.Screen name="MapHome" component={MapScreen} />
+    <MapStack.Screen name="EventChat" component={EventChatScreen} />
+  </MapStack.Navigator>
 );
 
 // Create
@@ -105,14 +115,13 @@ const CreateStackNavigator: React.FC = () => (
   </CreateStack.Navigator>
 );
 
-// Activity
-const ActivityStack = createNativeStackNavigator<ActivityStackParamList>();
-const ActivityStackNavigator: React.FC = () => (
-  <ActivityStack.Navigator screenOptions={stackScreenOptions}>
-    <ActivityStack.Screen name="ActivityHome" component={ActivityHomeScreen} />
-    <ActivityStack.Screen name="BookingDetail" component={BookingDetailScreen} />
-    <ActivityStack.Screen name="ChatThread" component={ChatThreadScreen} />
-  </ActivityStack.Navigator>
+// Chat
+const ChatStack = createNativeStackNavigator<ChatStackParamList>();
+const ChatStackNavigator: React.FC = () => (
+  <ChatStack.Navigator screenOptions={stackScreenOptions}>
+    <ChatStack.Screen name="ChatHome" component={ConversationListScreen} />
+    <ChatStack.Screen name="ChatThread" component={ChatThreadScreen} />
+  </ChatStack.Navigator>
 );
 
 // Profile
@@ -125,6 +134,7 @@ const ProfileStackNavigator: React.FC = () => (
     <ProfileStack.Screen name="BookingHistory" component={BookingHistoryScreen} />
     <ProfileStack.Screen name="HostDashboard" component={HostDashboardScreen} />
     <ProfileStack.Screen name="HostProfile" component={HostProfileScreen} />
+    <ProfileStack.Screen name="Activity" component={ActivityHomeScreen} />
   </ProfileStack.Navigator>
 );
 
@@ -135,18 +145,18 @@ const ProfileStackNavigator: React.FC = () => (
 interface TabIconProps {
   Icon: LucideIcon;
   focused: boolean;
-  label: string;
   size?: number;
   badge?: number;
 }
 
-const TabIcon: React.FC<TabIconProps> = ({ Icon, focused, label, size = 24, badge }) => {
-  const iconColor = focused ? colors.gold.DEFAULT : colors.ink.muted;
+const TabIcon: React.FC<TabIconProps> = ({ Icon, focused, size = 24, badge }) => {
+  // B/W per Figma: focused = full ink, unfocused = muted gray. No label.
+  const iconColor = focused ? colors.ink.DEFAULT : colors.ink.muted;
 
   return (
     <View className="items-center justify-center" style={{ minWidth: 48 }}>
       <View className="relative">
-        <Icon size={size} color={iconColor} strokeWidth={focused ? 2.2 : 1.8} />
+        <Icon size={size} color={iconColor} strokeWidth={focused ? 2.2 : 1.6} />
         {badge != null && badge > 0 && (
           <View
             className="absolute -right-1.5 -top-1 items-center justify-center rounded-full bg-hot"
@@ -158,18 +168,6 @@ const TabIcon: React.FC<TabIconProps> = ({ Icon, focused, label, size = 24, badg
           </View>
         )}
       </View>
-      {focused && (
-        <Text
-          style={{
-            fontSize: 10,
-            fontFamily: 'SourceSerif4-SemiBold',
-            color: colors.gold.DEFAULT,
-            marginTop: 2,
-          }}
-        >
-          {label}
-        </Text>
-      )}
     </View>
   );
 };
@@ -208,23 +206,19 @@ const MainTabNavigator: React.FC = () => {
       }}
     >
       <Tab.Screen
-        name="ExploreTab"
-        component={ExploreStackNavigator}
+        name="HomeTab"
+        component={HomeStackNavigator}
         listeners={{ tabPress: handleTabPress }}
         options={{
-          tabBarIcon: ({ focused }) => (
-            <TabIcon Icon={Compass} focused={focused} label="Explore" />
-          ),
+          tabBarIcon: ({ focused }) => <TabIcon Icon={Home} focused={focused} />,
         }}
       />
       <Tab.Screen
-        name="SearchTab"
-        component={SearchStackNavigator}
+        name="MapTab"
+        component={MapStackNavigator}
         listeners={{ tabPress: handleTabPress }}
         options={{
-          tabBarIcon: ({ focused }) => (
-            <TabIcon Icon={Search} focused={focused} label="Search" />
-          ),
+          tabBarIcon: ({ focused }) => <TabIcon Icon={Map} focused={focused} />,
         }}
       />
       <Tab.Screen
@@ -233,22 +227,17 @@ const MainTabNavigator: React.FC = () => {
         listeners={{ tabPress: handleTabPress }}
         options={{
           tabBarIcon: ({ focused }) => (
-            <TabIcon Icon={PlusCircle} focused={focused} label="Create" size={28} />
+            <TabIcon Icon={PlusCircle} focused={focused} size={28} />
           ),
         }}
       />
       <Tab.Screen
-        name="ActivityTab"
-        component={ActivityStackNavigator}
+        name="ChatTab"
+        component={ChatStackNavigator}
         listeners={{ tabPress: handleTabPress }}
         options={{
           tabBarIcon: ({ focused }) => (
-            <TabIcon
-              Icon={Bell}
-              focused={focused}
-              label="Activity"
-              badge={unreadNotifications}
-            />
+            <TabIcon Icon={MessageCircle} focused={focused} badge={unreadNotifications} />
           ),
         }}
       />
@@ -257,9 +246,7 @@ const MainTabNavigator: React.FC = () => {
         component={ProfileStackNavigator}
         listeners={{ tabPress: handleTabPress }}
         options={{
-          tabBarIcon: ({ focused }) => (
-            <TabIcon Icon={User} focused={focused} label="Profile" />
-          ),
+          tabBarIcon: ({ focused }) => <TabIcon Icon={User} focused={focused} />,
         }}
       />
     </Tab.Navigator>

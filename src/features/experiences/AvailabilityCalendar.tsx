@@ -95,7 +95,7 @@ const AvailabilityCalendar: React.FC<AvailabilityCalendarProps> = ({
                 style={{
                   fontSize: 11,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: isSelected ? '#FFFFFF' : isAvailable ? '#8A8A8A' : '#8A8A8A',
+                  color: isSelected ? '#FFFFFF' : isAvailable ? '#8E8E8E' : '#8E8E8E',
                   textDecorationLine: isAvailable ? 'none' : 'line-through',
                 }}
               >
@@ -105,7 +105,7 @@ const AvailabilityCalendar: React.FC<AvailabilityCalendarProps> = ({
                 style={{
                   fontSize: 18,
                   fontFamily: 'SourceSerif4-Bold',
-                  color: isSelected ? '#FFFFFF' : isAvailable ? '#1A1A1A' : '#8A8A8A',
+                  color: isSelected ? '#FFFFFF' : isAvailable ? '#262626' : '#8E8E8E',
                   textDecorationLine: isAvailable ? 'none' : 'line-through',
                   marginTop: 2,
                 }}
@@ -142,8 +142,8 @@ const AvailabilityCalendar: React.FC<AvailabilityCalendarProps> = ({
                     color: isTimeSelected
                       ? '#FFFFFF'
                       : ts.available
-                        ? '#1A1A1A'
-                        : '#8A8A8A',
+                        ? '#262626'
+                        : '#8E8E8E',
                     textDecorationLine: ts.available ? 'none' : 'line-through',
                   }}
                 >
@@ -157,7 +157,7 @@ const AvailabilityCalendar: React.FC<AvailabilityCalendarProps> = ({
 
       {selectedDate && activeSlot && activeSlot.timeSlots.length === 0 && (
         <View className="mt-4 px-4">
-          <Text style={{ fontSize: 13, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+          <Text style={{ fontSize: 13, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
             No time slots available for this date.
           </Text>
         </View>

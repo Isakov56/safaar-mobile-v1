@@ -162,7 +162,7 @@ const TypingIndicator: React.FC = () => {
       style={{
         flexDirection: 'row',
         alignSelf: 'flex-start',
-        backgroundColor: '#F2EDE4',
+        backgroundColor: '#FAFAFA',
         borderRadius: 16,
         paddingHorizontal: 14,
         paddingVertical: 10,
@@ -178,7 +178,7 @@ const TypingIndicator: React.FC = () => {
             width: 6,
             height: 6,
             borderRadius: 3,
-            backgroundColor: '#8A8A8A',
+            backgroundColor: '#8E8E8E',
             opacity: dot.interpolate({
               inputRange: [0, 1],
               outputRange: [0.3, 1],
@@ -209,17 +209,17 @@ const DateSeparator: React.FC<{ label: string }> = ({ label }) => (
       gap: 12,
     }}
   >
-    <View style={{ flex: 1, height: 1, backgroundColor: '#F2EDE4' }} />
+    <View style={{ flex: 1, height: 1, backgroundColor: '#FAFAFA' }} />
     <Text
       style={{
         fontSize: 11,
         fontFamily: 'SourceSerif4-Regular',
-        color: '#8A8A8A',
+        color: '#8E8E8E',
       }}
     >
       {label}
     </Text>
-    <View style={{ flex: 1, height: 1, backgroundColor: '#F2EDE4' }} />
+    <View style={{ flex: 1, height: 1, backgroundColor: '#FAFAFA' }} />
   </View>
 );
 
@@ -245,7 +245,7 @@ const ChatDetailScreen: React.FC = () => {
   const hasText = inputText.trim().length > 0;
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FAF8F4' }} edges={['top']}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }} edges={['top']}>
       {/* Header */}
       <View
         style={{
@@ -255,11 +255,11 @@ const ChatDetailScreen: React.FC = () => {
           paddingVertical: 10,
           backgroundColor: '#FFFFFF',
           borderBottomWidth: 1,
-          borderBottomColor: '#F2EDE4',
+          borderBottomColor: '#FAFAFA',
         }}
       >
         <Pressable hitSlop={8} style={{ padding: 4 }}>
-          <ChevronLeft size={24} color="#1A1A1A" />
+          <ChevronLeft size={24} color="#262626" />
         </Pressable>
         <Avatar
           uri="https://i.pravatar.cc/150?img=47"
@@ -272,7 +272,7 @@ const ChatDetailScreen: React.FC = () => {
             style={{
               fontSize: 15,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
           >
             Sabina Karimova
@@ -288,10 +288,10 @@ const ChatDetailScreen: React.FC = () => {
           </Text>
         </View>
         <Pressable hitSlop={8} style={{ padding: 8 }}>
-          <Phone size={20} color="#1A1A1A" />
+          <Phone size={20} color="#262626" />
         </Pressable>
         <Pressable hitSlop={8} style={{ padding: 8 }}>
-          <Video size={20} color="#1A1A1A" />
+          <Video size={20} color="#262626" />
         </Pressable>
       </View>
 
@@ -325,18 +325,18 @@ const ChatDetailScreen: React.FC = () => {
             paddingVertical: 8,
             backgroundColor: '#FFFFFF',
             borderTopWidth: 1,
-            borderTopColor: '#F2EDE4',
+            borderTopColor: '#FAFAFA',
           }}
         >
           <Pressable hitSlop={8} style={{ padding: 8, paddingBottom: 10 }}>
-            <Paperclip size={20} color="#8A8A8A" />
+            <Paperclip size={20} color="#8E8E8E" />
           </Pressable>
           <View
             style={{
               flex: 1,
               flexDirection: 'row',
               alignItems: 'flex-end',
-              backgroundColor: '#FAF8F4',
+              backgroundColor: '#FFFFFF',
               borderRadius: 20,
               marginHorizontal: 6,
               paddingHorizontal: 14,
@@ -349,19 +349,19 @@ const ChatDetailScreen: React.FC = () => {
               value={inputText}
               onChangeText={setInputText}
               placeholder="Type a message..."
-              placeholderTextColor="#8A8A8A"
+              placeholderTextColor="#8E8E8E"
               multiline
               style={{
                 flex: 1,
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#1A1A1A',
+                color: '#262626',
                 maxHeight: 100,
                 paddingVertical: 4,
               }}
             />
             <Pressable hitSlop={8} style={{ paddingBottom: 2, paddingLeft: 6 }}>
-              <Smile size={18} color="#8A8A8A" />
+              <Smile size={18} color="#8E8E8E" />
             </Pressable>
           </View>
           <Pressable
@@ -372,7 +372,7 @@ const ChatDetailScreen: React.FC = () => {
             {hasText ? (
               <Send size={20} color="#C4993C" />
             ) : (
-              <Mic size={20} color="#8A8A8A" />
+              <Mic size={20} color="#8E8E8E" />
             )}
           </Pressable>
         </View>

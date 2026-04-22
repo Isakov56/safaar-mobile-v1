@@ -19,7 +19,7 @@ const variantStyles: Record<BadgeVariant, { bg: string; text: string; border?: s
   error: { bg: '#FFEBEE', text: '#C62828' },
   traveler: { bg: '#FBE9E7', text: '#BF360C' },
   local: { bg: '#E8F5E9', text: '#2E7D32' },
-  outline: { bg: 'transparent', text: '#4A4A4A', border: '#F2EDE4' },
+  outline: { bg: 'transparent', text: '#3C3C3C', border: '#FAFAFA' },
 };
 
 const sizeStyles: Record<BadgeSize, { paddingH: number; paddingV: number; fontSize: number }> = {

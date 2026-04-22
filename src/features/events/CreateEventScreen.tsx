@@ -66,7 +66,7 @@ const CreateEventScreen: React.FC = () => {
   }, [title]);
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FAF8F4' }} edges={['top']}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }} edges={['top']}>
       {/* Header */}
       <View
         style={{
@@ -76,18 +76,18 @@ const CreateEventScreen: React.FC = () => {
           paddingHorizontal: 16,
           paddingVertical: 12,
           borderBottomWidth: 1,
-          borderBottomColor: '#F2EDE4',
+          borderBottomColor: '#FAFAFA',
           backgroundColor: '#FFFFFF',
         }}
       >
         <Pressable hitSlop={8}>
-          <X size={24} color="#1A1A1A" />
+          <X size={24} color="#262626" />
         </Pressable>
         <Text
           style={{
             fontSize: 17,
             fontFamily: 'SourceSerif4-SemiBold',
-            color: '#1A1A1A',
+            color: '#262626',
           }}
         >
           Create Event
@@ -108,7 +108,7 @@ const CreateEventScreen: React.FC = () => {
             backgroundColor: '#FFFFFF',
             borderRadius: 16,
             borderWidth: 1,
-            borderColor: '#F2EDE4',
+            borderColor: '#FAFAFA',
             borderStyle: 'dashed',
             alignItems: 'center',
             justifyContent: 'center',
@@ -129,7 +129,7 @@ const CreateEventScreen: React.FC = () => {
                 style={{
                   fontSize: 14,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#4A4A4A',
+                  color: '#3C3C3C',
                   marginTop: 8,
                 }}
               >
@@ -145,7 +145,7 @@ const CreateEventScreen: React.FC = () => {
             style={{
               fontSize: 13,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#4A4A4A',
+              color: '#3C3C3C',
               marginBottom: 6,
             }}
           >
@@ -155,17 +155,17 @@ const CreateEventScreen: React.FC = () => {
             value={title}
             onChangeText={setTitle}
             placeholder="Give your event a name"
-            placeholderTextColor="#8A8A8A"
+            placeholderTextColor="#8E8E8E"
             style={{
               backgroundColor: '#FFFFFF',
               borderRadius: 12,
               borderWidth: 1,
-              borderColor: '#F2EDE4',
+              borderColor: '#FAFAFA',
               paddingHorizontal: 14,
               paddingVertical: 12,
               fontSize: 15,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
           />
         </View>
@@ -176,7 +176,7 @@ const CreateEventScreen: React.FC = () => {
             style={{
               fontSize: 13,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#4A4A4A',
+              color: '#3C3C3C',
               marginBottom: 6,
             }}
           >
@@ -186,18 +186,18 @@ const CreateEventScreen: React.FC = () => {
             value={description}
             onChangeText={setDescription}
             placeholder="Tell people what to expect..."
-            placeholderTextColor="#8A8A8A"
+            placeholderTextColor="#8E8E8E"
             multiline
             style={{
               backgroundColor: '#FFFFFF',
               borderRadius: 12,
               borderWidth: 1,
-              borderColor: '#F2EDE4',
+              borderColor: '#FAFAFA',
               paddingHorizontal: 14,
               paddingVertical: 12,
               fontSize: 15,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#1A1A1A',
+              color: '#262626',
               minHeight: 100,
               textAlignVertical: 'top',
             }}
@@ -217,7 +217,7 @@ const CreateEventScreen: React.FC = () => {
               style={{
                 fontSize: 13,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#4A4A4A',
+                color: '#3C3C3C',
                 marginBottom: 6,
               }}
             >
@@ -230,7 +230,7 @@ const CreateEventScreen: React.FC = () => {
                 backgroundColor: '#FFFFFF',
                 borderRadius: 12,
                 borderWidth: 1,
-                borderColor: '#F2EDE4',
+                borderColor: '#FAFAFA',
                 paddingHorizontal: 14,
                 paddingVertical: 12,
               }}
@@ -240,13 +240,13 @@ const CreateEventScreen: React.FC = () => {
                 value={date}
                 onChangeText={setDate}
                 placeholder="Apr 15, 2026"
-                placeholderTextColor="#8A8A8A"
+                placeholderTextColor="#8E8E8E"
                 style={{
                   flex: 1,
                   marginLeft: 8,
                   fontSize: 14,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#1A1A1A',
+                  color: '#262626',
                 }}
               />
             </View>
@@ -256,7 +256,7 @@ const CreateEventScreen: React.FC = () => {
               style={{
                 fontSize: 13,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#4A4A4A',
+                color: '#3C3C3C',
                 marginBottom: 6,
               }}
             >
@@ -269,7 +269,7 @@ const CreateEventScreen: React.FC = () => {
                 backgroundColor: '#FFFFFF',
                 borderRadius: 12,
                 borderWidth: 1,
-                borderColor: '#F2EDE4',
+                borderColor: '#FAFAFA',
                 paddingHorizontal: 14,
                 paddingVertical: 12,
               }}
@@ -279,13 +279,13 @@ const CreateEventScreen: React.FC = () => {
                 value={time}
                 onChangeText={setTime}
                 placeholder="10:00 AM"
-                placeholderTextColor="#8A8A8A"
+                placeholderTextColor="#8E8E8E"
                 style={{
                   flex: 1,
                   marginLeft: 8,
                   fontSize: 14,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#1A1A1A',
+                  color: '#262626',
                 }}
               />
             </View>
@@ -298,7 +298,7 @@ const CreateEventScreen: React.FC = () => {
             style={{
               fontSize: 13,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#4A4A4A',
+              color: '#3C3C3C',
               marginBottom: 6,
             }}
           >
@@ -311,7 +311,7 @@ const CreateEventScreen: React.FC = () => {
               backgroundColor: '#FFFFFF',
               borderRadius: 12,
               borderWidth: 1,
-              borderColor: '#F2EDE4',
+              borderColor: '#FAFAFA',
               paddingHorizontal: 14,
               paddingVertical: 12,
             }}
@@ -321,13 +321,13 @@ const CreateEventScreen: React.FC = () => {
               value={location}
               onChangeText={setLocation}
               placeholder="Search for a venue..."
-              placeholderTextColor="#8A8A8A"
+              placeholderTextColor="#8E8E8E"
               style={{
                 flex: 1,
                 marginLeft: 8,
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             />
           </View>
@@ -339,7 +339,7 @@ const CreateEventScreen: React.FC = () => {
             style={{
               fontSize: 13,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#4A4A4A',
+              color: '#3C3C3C',
               marginBottom: 6,
             }}
           >
@@ -362,7 +362,7 @@ const CreateEventScreen: React.FC = () => {
                 backgroundColor: '#FFFFFF',
                 borderRadius: 12,
                 borderWidth: 1,
-                borderColor: '#F2EDE4',
+                borderColor: '#FAFAFA',
                 paddingHorizontal: 14,
                 paddingVertical: 12,
                 marginTop: 10,
@@ -373,21 +373,21 @@ const CreateEventScreen: React.FC = () => {
                 value={price}
                 onChangeText={setPrice}
                 placeholder="0.00"
-                placeholderTextColor="#8A8A8A"
+                placeholderTextColor="#8E8E8E"
                 keyboardType="decimal-pad"
                 style={{
                   flex: 1,
                   marginLeft: 8,
                   fontSize: 15,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#1A1A1A',
+                  color: '#262626',
                 }}
               />
               <Text
                 style={{
                   fontSize: 13,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                 }}
               >
                 USD
@@ -402,7 +402,7 @@ const CreateEventScreen: React.FC = () => {
             style={{
               fontSize: 13,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#4A4A4A',
+              color: '#3C3C3C',
               marginBottom: 6,
             }}
           >
@@ -415,7 +415,7 @@ const CreateEventScreen: React.FC = () => {
               backgroundColor: '#FFFFFF',
               borderRadius: 12,
               borderWidth: 1,
-              borderColor: '#F2EDE4',
+              borderColor: '#FAFAFA',
               paddingHorizontal: 14,
               paddingVertical: 8,
             }}
@@ -427,7 +427,7 @@ const CreateEventScreen: React.FC = () => {
                 marginLeft: 10,
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#4A4A4A',
+                color: '#3C3C3C',
               }}
             >
               Maximum attendees
@@ -438,12 +438,12 @@ const CreateEventScreen: React.FC = () => {
                 width: 32,
                 height: 32,
                 borderRadius: 8,
-                backgroundColor: '#F2EDE4',
+                backgroundColor: '#FAFAFA',
                 alignItems: 'center',
                 justifyContent: 'center',
               }}
             >
-              <Minus size={16} color="#1A1A1A" />
+              <Minus size={16} color="#262626" />
             </Pressable>
             <Text
               style={{
@@ -451,7 +451,7 @@ const CreateEventScreen: React.FC = () => {
                 textAlign: 'center',
                 fontSize: 16,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             >
               {spotsLimit}
@@ -462,12 +462,12 @@ const CreateEventScreen: React.FC = () => {
                 width: 32,
                 height: 32,
                 borderRadius: 8,
-                backgroundColor: '#F2EDE4',
+                backgroundColor: '#FAFAFA',
                 alignItems: 'center',
                 justifyContent: 'center',
               }}
             >
-              <Plus size={16} color="#1A1A1A" />
+              <Plus size={16} color="#262626" />
             </Pressable>
           </View>
         </View>

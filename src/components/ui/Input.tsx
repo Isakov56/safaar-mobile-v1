@@ -69,13 +69,13 @@ const Input: React.FC<InputProps> = ({
     ? '#C62828'
     : isFocused
       ? '#C4993C'
-      : '#8A8A8A';
+      : '#8E8E8E';
 
   const borderColor = error
     ? '#C62828'
     : isFocused
       ? '#C4993C'
-      : '#F2EDE4';
+      : '#FAFAFA';
 
   return (
     <View style={containerStyle}>
@@ -94,7 +94,7 @@ const Input: React.FC<InputProps> = ({
       >
         {Icon && (
           <View style={{ paddingTop: 14, marginRight: 8 }}>
-            <Icon size={18} color={isFocused ? '#C4993C' : '#8A8A8A'} />
+            <Icon size={18} color={isFocused ? '#C4993C' : '#8E8E8E'} />
           </View>
         )}
 
@@ -127,7 +127,7 @@ const Input: React.FC<InputProps> = ({
             style={{
               fontSize: 15,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#1A1A1A',
+              color: '#262626',
               paddingTop: 18,
               paddingBottom: 6,
               minHeight: multiline ? 80 : undefined,
@@ -144,9 +144,9 @@ const Input: React.FC<InputProps> = ({
             hitSlop={8}
           >
             {isSecureVisible ? (
-              <EyeOff size={18} color="#8A8A8A" />
+              <EyeOff size={18} color="#8E8E8E" />
             ) : (
-              <Eye size={18} color="#8A8A8A" />
+              <Eye size={18} color="#8E8E8E" />
             )}
           </Pressable>
         )}
@@ -171,7 +171,7 @@ const Input: React.FC<InputProps> = ({
           style={{
             fontSize: 11,
             fontFamily: 'SourceSerif4-Regular',
-            color: '#8A8A8A',
+            color: '#8E8E8E',
             marginTop: 2,
             textAlign: 'right',
           }}

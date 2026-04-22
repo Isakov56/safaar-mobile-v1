@@ -147,7 +147,7 @@ const BookingsTab: React.FC = () => (
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
                 marginTop: 4,
               }}
               numberOfLines={1}
@@ -158,7 +158,7 @@ const BookingsTab: React.FC = () => (
               style={{
                 fontSize: 12,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
                 marginTop: 2,
               }}
             >
@@ -172,12 +172,12 @@ const BookingsTab: React.FC = () => (
                 gap: 4,
               }}
             >
-              <Calendar size={11} color="#8A8A8A" />
+              <Calendar size={11} color="#8E8E8E" />
               <Text
                 style={{
                   fontSize: 11,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                 }}
               >
                 {booking.date}
@@ -212,7 +212,7 @@ const SavedTab: React.FC = () => (
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
                 marginTop: 4,
               }}
               numberOfLines={1}
@@ -223,7 +223,7 @@ const SavedTab: React.FC = () => (
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-Bold',
-                color: '#1A1A1A',
+                color: '#262626',
                 marginTop: 4,
               }}
             >
@@ -232,7 +232,7 @@ const SavedTab: React.FC = () => (
                 style={{
                   fontSize: 11,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                 }}
               >
                 / person
@@ -288,7 +288,7 @@ const MyProfileScreen: React.FC = () => {
   const [activeTab, setActiveTab] = useState<ProfileTab>('bookings');
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FAF8F4' }} edges={['top']}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }} edges={['top']}>
       <ScrollView showsVerticalScrollIndicator={false}>
         {/* Header Row */}
         <View
@@ -309,7 +309,7 @@ const MyProfileScreen: React.FC = () => {
               justifyContent: 'center',
             }}
           >
-            <Settings size={20} color="#1A1A1A" />
+            <Settings size={20} color="#262626" />
           </Pressable>
         </View>
 
@@ -324,7 +324,7 @@ const MyProfileScreen: React.FC = () => {
             style={{
               fontSize: 22,
               fontFamily: 'SourceSerif4-Bold',
-              color: '#1A1A1A',
+              color: '#262626',
               marginTop: 12,
             }}
           >
@@ -334,7 +334,7 @@ const MyProfileScreen: React.FC = () => {
             style={{
               fontSize: 14,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#4A4A4A',
+              color: '#3C3C3C',
               fontStyle: 'italic',
               marginTop: 4,
               textAlign: 'center',
@@ -351,12 +351,12 @@ const MyProfileScreen: React.FC = () => {
               gap: 4,
             }}
           >
-            <MapPin size={12} color="#8A8A8A" />
+            <MapPin size={12} color="#8E8E8E" />
             <Text
               style={{
                 fontSize: 12,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
               }}
             >
               {MOCK_USER.city}
@@ -383,7 +383,7 @@ const MyProfileScreen: React.FC = () => {
                 style={{
                   fontSize: 18,
                   fontFamily: 'SourceSerif4-Bold',
-                  color: '#1A1A1A',
+                  color: '#262626',
                 }}
               >
                 {stat.value}
@@ -392,7 +392,7 @@ const MyProfileScreen: React.FC = () => {
                 style={{
                   fontSize: 12,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                 }}
               >
                 {stat.label}
@@ -419,7 +419,7 @@ const MyProfileScreen: React.FC = () => {
             flexDirection: 'row',
             marginTop: 20,
             borderBottomWidth: 1,
-            borderBottomColor: '#F2EDE4',
+            borderBottomColor: '#FAFAFA',
           }}
         >
           {TABS.map((tab) => {
@@ -442,7 +442,7 @@ const MyProfileScreen: React.FC = () => {
                     fontFamily: isActive
                       ? 'SourceSerif4-SemiBold'
                       : 'SourceSerif4-Regular',
-                    color: isActive ? '#1A1A1A' : '#8A8A8A',
+                    color: isActive ? '#262626' : '#8E8E8E',
                   }}
                 >
                   {tab.label}

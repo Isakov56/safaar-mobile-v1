@@ -73,7 +73,7 @@ const EventCard: React.FC<EventCardProps> = ({
             style={{
               fontSize: 13,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
           >
             {event.poster.name}
@@ -94,7 +94,7 @@ const EventCard: React.FC<EventCardProps> = ({
         style={{
           fontSize: 18,
           fontFamily: 'SourceSerif4-SemiBold',
-          color: '#1A1A1A',
+          color: '#262626',
           marginBottom: 12,
         }}
       >
@@ -104,12 +104,12 @@ const EventCard: React.FC<EventCardProps> = ({
       {/* Event details */}
       <View style={{ marginBottom: 12 }}>
         <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 6 }}>
-          <Calendar size={14} color="#8A8A8A" />
+          <Calendar size={14} color="#8E8E8E" />
           <Text
             style={{
               fontSize: 13,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#4A4A4A',
+              color: '#3C3C3C',
               marginLeft: 6,
             }}
           >
@@ -121,17 +121,17 @@ const EventCard: React.FC<EventCardProps> = ({
               width: 3,
               height: 3,
               borderRadius: 1.5,
-              backgroundColor: '#8A8A8A',
+              backgroundColor: '#8E8E8E',
               marginHorizontal: 8,
             }}
           />
 
-          <Clock size={14} color="#8A8A8A" />
+          <Clock size={14} color="#8E8E8E" />
           <Text
             style={{
               fontSize: 13,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#4A4A4A',
+              color: '#3C3C3C',
               marginLeft: 6,
             }}
           >
@@ -140,13 +140,13 @@ const EventCard: React.FC<EventCardProps> = ({
         </View>
 
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          <MapPin size={14} color="#8A8A8A" />
+          <MapPin size={14} color="#8E8E8E" />
           <Text
             numberOfLines={1}
             style={{
               fontSize: 13,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#4A4A4A',
+              color: '#3C3C3C',
               marginLeft: 6,
               flex: 1,
             }}
@@ -160,12 +160,12 @@ const EventCard: React.FC<EventCardProps> = ({
       <View style={{ marginBottom: 12 }}>
         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 4 }}>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-            <Users size={13} color="#8A8A8A" />
+            <Users size={13} color="#8E8E8E" />
             <Text
               style={{
                 fontSize: 11,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
                 marginLeft: 4,
               }}
             >
@@ -176,7 +176,7 @@ const EventCard: React.FC<EventCardProps> = ({
             style={{
               fontSize: 11,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: spotsLeft <= 3 ? '#E65100' : '#8A8A8A',
+              color: spotsLeft <= 3 ? '#E65100' : '#8E8E8E',
             }}
           >
             {spotsLeft} spots left
@@ -186,7 +186,7 @@ const EventCard: React.FC<EventCardProps> = ({
         <View
           style={{
             height: 4,
-            backgroundColor: '#F2EDE4',
+            backgroundColor: '#FAFAFA',
             borderRadius: 2,
             overflow: 'hidden',
           }}

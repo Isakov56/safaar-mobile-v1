@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { io, Socket } from 'socket.io-client';
-import * as SecureStore from 'expo-secure-store';
+import { secureStorage as SecureStore } from '../utils/secureStorage';
 import { useSocketStore } from '../stores/socketStore';
 
 const SOCKET_URL = __DEV__ ? 'http://localhost:3000' : 'https://api.safaar.app';

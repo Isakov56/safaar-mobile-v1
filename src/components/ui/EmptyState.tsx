@@ -42,13 +42,13 @@ const EmptyState: React.FC<EmptyStateProps> = ({
             width: 72,
             height: 72,
             borderRadius: 36,
-            backgroundColor: '#F2EDE4',
+            backgroundColor: '#FAFAFA',
             alignItems: 'center',
             justifyContent: 'center',
             marginBottom: 16,
           }}
         >
-          <Icon size={32} color="#8A8A8A" />
+          <Icon size={32} color="#8E8E8E" />
         </View>
       )}
 
@@ -56,7 +56,7 @@ const EmptyState: React.FC<EmptyStateProps> = ({
         style={{
           fontSize: 18,
           fontFamily: 'SourceSerif4-SemiBold',
-          color: '#1A1A1A',
+          color: '#262626',
           textAlign: 'center',
           marginBottom: 8,
         }}
@@ -69,7 +69,7 @@ const EmptyState: React.FC<EmptyStateProps> = ({
           style={{
             fontSize: 15,
             fontFamily: 'SourceSerif4-Regular',
-            color: '#8A8A8A',
+            color: '#8E8E8E',
             textAlign: 'center',
             lineHeight: 22,
             marginBottom: 24,

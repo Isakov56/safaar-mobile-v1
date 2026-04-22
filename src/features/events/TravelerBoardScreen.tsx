@@ -143,7 +143,7 @@ const TravelerCard: React.FC<{ traveler: Traveler }> = ({ traveler }) => (
             style={{
               fontSize: 15,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
           >
             {traveler.name}
@@ -162,12 +162,12 @@ const TravelerCard: React.FC<{ traveler: Traveler }> = ({ traveler }) => (
             gap: 4,
           }}
         >
-          <MapPin size={12} color="#8A8A8A" />
+          <MapPin size={12} color="#8E8E8E" />
           <Text
             style={{
               fontSize: 12,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#8A8A8A',
+              color: '#8E8E8E',
             }}
           >
             {traveler.homeCity}
@@ -181,7 +181,7 @@ const TravelerCard: React.FC<{ traveler: Traveler }> = ({ traveler }) => (
       style={{
         fontSize: 13,
         fontFamily: 'SourceSerif4-Regular',
-        color: '#4A4A4A',
+        color: '#3C3C3C',
         marginTop: 10,
         lineHeight: 18,
       }}
@@ -205,7 +205,7 @@ const TravelerCard: React.FC<{ traveler: Traveler }> = ({ traveler }) => (
           style={{
             fontSize: 12,
             fontFamily: 'SourceSerif4-Regular',
-            color: '#4A4A4A',
+            color: '#3C3C3C',
           }}
         >
           {traveler.travelDates}
@@ -217,7 +217,7 @@ const TravelerCard: React.FC<{ traveler: Traveler }> = ({ traveler }) => (
           style={{
             fontSize: 12,
             fontFamily: 'SourceSerif4-Regular',
-            color: '#4A4A4A',
+            color: '#3C3C3C',
           }}
         >
           {traveler.languages.join(', ')}
@@ -245,7 +245,7 @@ const TravelerCard: React.FC<{ traveler: Traveler }> = ({ traveler }) => (
         justifyContent: 'center',
         marginTop: 12,
         paddingVertical: 10,
-        backgroundColor: '#FAF8F4',
+        backgroundColor: '#FFFFFF',
         borderRadius: 10,
         gap: 6,
       }}
@@ -283,7 +283,7 @@ const TravelerBoardScreen: React.FC = () => {
   );
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FAF8F4' }} edges={['top']}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }} edges={['top']}>
       {/* Header */}
       <View
         style={{
@@ -294,7 +294,7 @@ const TravelerBoardScreen: React.FC = () => {
           paddingVertical: 14,
           backgroundColor: '#FFFFFF',
           borderBottomWidth: 1,
-          borderBottomColor: '#F2EDE4',
+          borderBottomColor: '#FAFAFA',
         }}
       >
         <View style={{ flex: 1 }}>
@@ -302,7 +302,7 @@ const TravelerBoardScreen: React.FC = () => {
             style={{
               fontSize: 20,
               fontFamily: 'SourceSerif4-Bold',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
           >
             Travel Buddies in Tashkent
@@ -314,12 +314,12 @@ const TravelerBoardScreen: React.FC = () => {
             width: 40,
             height: 40,
             borderRadius: 12,
-            backgroundColor: '#FAF8F4',
+            backgroundColor: '#FFFFFF',
             alignItems: 'center',
             justifyContent: 'center',
           }}
         >
-          <Filter size={18} color="#1A1A1A" />
+          <Filter size={18} color="#262626" />
         </Pressable>
       </View>
 
@@ -385,7 +385,7 @@ const TravelerBoardScreen: React.FC = () => {
                 width: 36,
                 height: 4,
                 borderRadius: 2,
-                backgroundColor: '#F2EDE4',
+                backgroundColor: '#FAFAFA',
               }}
             />
           </View>
@@ -399,20 +399,20 @@ const TravelerBoardScreen: React.FC = () => {
               paddingHorizontal: 16,
               paddingVertical: 12,
               borderBottomWidth: 1,
-              borderBottomColor: '#F2EDE4',
+              borderBottomColor: '#FAFAFA',
             }}
           >
             <Text
               style={{
                 fontSize: 18,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             >
               Filter Travelers
             </Text>
             <Pressable onPress={() => setShowFilter(false)} hitSlop={8}>
-              <X size={22} color="#1A1A1A" />
+              <X size={22} color="#262626" />
             </Pressable>
           </View>
 
@@ -422,7 +422,7 @@ const TravelerBoardScreen: React.FC = () => {
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
                 marginBottom: 10,
               }}
             >
@@ -446,7 +446,7 @@ const TravelerBoardScreen: React.FC = () => {
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
                 marginBottom: 10,
               }}
             >
@@ -479,7 +479,7 @@ const TravelerBoardScreen: React.FC = () => {
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
                 marginBottom: 10,
               }}
             >
@@ -512,7 +512,7 @@ const TravelerBoardScreen: React.FC = () => {
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
                 marginBottom: 10,
               }}
             >

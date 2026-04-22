@@ -16,7 +16,7 @@ export const linking: LinkingOptions<RootStackParamList> = {
       },
       Main: {
         screens: {
-          ExploreTab: {
+          HomeTab: {
             screens: {
               Home: 'home',
               CityPulse: 'city/:cityId',
@@ -24,12 +24,15 @@ export const linking: LinkingOptions<RootStackParamList> = {
               HostProfile: 'host/:userId',
               Checkout: 'checkout/:experienceId/:slotId',
               BookingConfirmation: 'booking-confirmation/:bookingId',
+              Search: 'search',
+              SearchResults: 'search/results',
+              Activity: 'activity',
             },
           },
-          SearchTab: {
+          MapTab: {
             screens: {
-              SearchHome: 'search',
-              SearchResults: 'search/results',
+              MapHome: 'map',
+              EventChat: 'map/event/:eventId/chat',
             },
           },
           CreateTab: {
@@ -40,10 +43,9 @@ export const linking: LinkingOptions<RootStackParamList> = {
               CreatePost: 'create/post',
             },
           },
-          ActivityTab: {
+          ChatTab: {
             screens: {
-              ActivityHome: 'activity',
-              BookingDetail: 'booking/:bookingId',
+              ChatHome: 'chats',
               ChatThread: 'chat/:threadId',
             },
           },

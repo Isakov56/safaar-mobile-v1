@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import * as SecureStore from 'expo-secure-store';
+import { secureStorage as SecureStore } from '../utils/secureStorage';
 
 // ──────────────────────────────────────────────
 // Types

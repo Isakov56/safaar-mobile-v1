@@ -191,7 +191,7 @@ const FeedTabs: React.FC<{
     style={{
       flexDirection: 'row',
       borderBottomWidth: 1,
-      borderBottomColor: '#F2EDE4',
+      borderBottomColor: '#FAFAFA',
     }}
   >
     {TABS.map((tab) => {
@@ -214,7 +214,7 @@ const FeedTabs: React.FC<{
               fontFamily: isActive
                 ? 'SourceSerif4-SemiBold'
                 : 'SourceSerif4-Regular',
-              color: isActive ? '#1A1A1A' : '#8A8A8A',
+              color: isActive ? '#262626' : '#8E8E8E',
             }}
           >
             {tab.label}
@@ -258,7 +258,7 @@ const PostCard: React.FC<{
           style={{
             fontSize: 14,
             fontFamily: 'SourceSerif4-SemiBold',
-            color: '#1A1A1A',
+            color: '#262626',
           }}
         >
           {post.author.name}
@@ -266,12 +266,12 @@ const PostCard: React.FC<{
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
           {post.location && (
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <MapPin size={11} color="#8A8A8A" />
+              <MapPin size={11} color="#8E8E8E" />
               <Text
                 style={{
                   fontSize: 11,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                   marginLeft: 2,
                 }}
               >
@@ -285,7 +285,7 @@ const PostCard: React.FC<{
         style={{
           fontSize: 11,
           fontFamily: 'SourceSerif4-Regular',
-          color: '#8A8A8A',
+          color: '#8E8E8E',
         }}
       >
         {post.createdAt}
@@ -378,14 +378,14 @@ const PostCard: React.FC<{
       >
         <Heart
           size={20}
-          color={post.isLiked ? '#E53935' : '#1A1A1A'}
+          color={post.isLiked ? '#E53935' : '#262626'}
           fill={post.isLiked ? '#E53935' : 'transparent'}
         />
         <Text
           style={{
             fontSize: 13,
             fontFamily: 'SourceSerif4-Regular',
-            color: '#4A4A4A',
+            color: '#3C3C3C',
             marginLeft: 4,
           }}
         >
@@ -397,12 +397,12 @@ const PostCard: React.FC<{
         style={{ flexDirection: 'row', alignItems: 'center' }}
         hitSlop={8}
       >
-        <MessageCircle size={20} color="#1A1A1A" />
+        <MessageCircle size={20} color="#262626" />
         <Text
           style={{
             fontSize: 13,
             fontFamily: 'SourceSerif4-Regular',
-            color: '#4A4A4A',
+            color: '#3C3C3C',
             marginLeft: 4,
           }}
         >
@@ -411,7 +411,7 @@ const PostCard: React.FC<{
       </Pressable>
 
       <Pressable hitSlop={8}>
-        <Share2 size={20} color="#1A1A1A" />
+        <Share2 size={20} color="#262626" />
       </Pressable>
 
       <View style={{ flex: 1 }} />
@@ -419,7 +419,7 @@ const PostCard: React.FC<{
       <Pressable onPress={() => onToggleSave(post.id)} hitSlop={8}>
         <Bookmark
           size={20}
-          color={post.isSaved ? '#C4993C' : '#1A1A1A'}
+          color={post.isSaved ? '#C4993C' : '#262626'}
           fill={post.isSaved ? '#C4993C' : 'transparent'}
         />
       </Pressable>
@@ -431,7 +431,7 @@ const PostCard: React.FC<{
         style={{
           fontSize: 14,
           fontFamily: 'SourceSerif4-Regular',
-          color: '#1A1A1A',
+          color: '#262626',
           lineHeight: 20,
         }}
         numberOfLines={3}
@@ -498,7 +498,7 @@ const FeedScreen: React.FC = () => {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: '#FAF8F4' }}
+      style={{ flex: 1, backgroundColor: '#FFFFFF' }}
       edges={['top']}
     >
       {/* Sticky Tabs */}

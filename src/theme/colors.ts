@@ -1,17 +1,20 @@
 export const colors = {
-  // Core
+  // Core — Instagram-inspired pure white + near-black + gray hairlines
   ink: {
-    DEFAULT: '#1A1A1A',
-    soft: '#4A4A4A',
-    muted: '#8A8A8A',
+    DEFAULT: '#262626',
+    soft: '#3C3C3C',
+    muted: '#8E8E8E',
   },
   surface: '#FFFFFF',
   canvas: {
-    DEFAULT: '#FAF8F4',
-    deep: '#F2EDE4',
+    DEFAULT: '#FFFFFF',
+    deep: '#FAFAFA',
   },
+  line: '#DBDBDB',
+  link: '#0095F6',
+  story: '#E1306C',
 
-  // Brand
+  // Brand — gold kept for back-compat; used sparingly
   gold: {
     DEFAULT: '#C4993C',
     soft: '#E8D5A8',

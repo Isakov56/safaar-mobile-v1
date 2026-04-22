@@ -251,7 +251,7 @@ const MetricTile: React.FC<{ metric: MetricCard }> = ({ metric }) => {
         style={{
           fontSize: 11,
           fontFamily: 'SourceSerif4-Regular',
-          color: '#8A8A8A',
+          color: '#8E8E8E',
         }}
       >
         {metric.label}
@@ -260,7 +260,7 @@ const MetricTile: React.FC<{ metric: MetricCard }> = ({ metric }) => {
         style={{
           fontSize: 22,
           fontFamily: 'SourceSerif4-Bold',
-          color: '#1A1A1A',
+          color: '#262626',
           marginTop: 2,
         }}
       >
@@ -299,7 +299,7 @@ const DashboardScreen: React.FC = () => {
   const metrics = METRICS[period];
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FAF8F4' }} edges={['top']}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }} edges={['top']}>
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: 40 }}
@@ -319,7 +319,7 @@ const DashboardScreen: React.FC = () => {
             style={{
               fontSize: 24,
               fontFamily: 'SourceSerif4-ExtraBold',
-              color: '#1A1A1A',
+              color: '#262626',
               letterSpacing: 2,
             }}
           >
@@ -370,7 +370,7 @@ const DashboardScreen: React.FC = () => {
               style={{
                 fontSize: 16,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             >
               Revenue Trend
@@ -402,7 +402,7 @@ const DashboardScreen: React.FC = () => {
                   style={{
                     fontSize: 10,
                     fontFamily: 'SourceSerif4-Regular',
-                    color: '#8A8A8A',
+                    color: '#8E8E8E',
                     marginTop: 4,
                   }}
                 >
@@ -428,7 +428,7 @@ const DashboardScreen: React.FC = () => {
               style={{
                 fontSize: 16,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             >
               Top Customers
@@ -460,14 +460,14 @@ const DashboardScreen: React.FC = () => {
                   paddingVertical: 12,
                   borderBottomWidth:
                     index < MOCK_TOP_CUSTOMERS.length - 1 ? 1 : 0,
-                  borderBottomColor: '#F2EDE4',
+                  borderBottomColor: '#FAFAFA',
                 }}
               >
                 <Text
                   style={{
                     fontSize: 14,
                     fontFamily: 'SourceSerif4-Bold',
-                    color: '#8A8A8A',
+                    color: '#8E8E8E',
                     width: 20,
                   }}
                 >
@@ -483,7 +483,7 @@ const DashboardScreen: React.FC = () => {
                     style={{
                       fontSize: 14,
                       fontFamily: 'SourceSerif4-SemiBold',
-                      color: '#1A1A1A',
+                      color: '#262626',
                     }}
                   >
                     {customer.name}
@@ -492,7 +492,7 @@ const DashboardScreen: React.FC = () => {
                     style={{
                       fontSize: 11,
                       fontFamily: 'SourceSerif4-Regular',
-                      color: '#8A8A8A',
+                      color: '#8E8E8E',
                     }}
                   >
                     {customer.bookings} bookings
@@ -502,7 +502,7 @@ const DashboardScreen: React.FC = () => {
                   style={{
                     fontSize: 14,
                     fontFamily: 'SourceSerif4-Bold',
-                    color: '#1A1A1A',
+                    color: '#262626',
                   }}
                 >
                   ${customer.totalSpent}
@@ -527,7 +527,7 @@ const DashboardScreen: React.FC = () => {
               style={{
                 fontSize: 16,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             >
               Recent Bookings
@@ -559,7 +559,7 @@ const DashboardScreen: React.FC = () => {
                   paddingVertical: 12,
                   borderBottomWidth:
                     index < MOCK_RECENT_BOOKINGS.length - 1 ? 1 : 0,
-                  borderBottomColor: '#F2EDE4',
+                  borderBottomColor: '#FAFAFA',
                 }}
               >
                 <Avatar
@@ -572,7 +572,7 @@ const DashboardScreen: React.FC = () => {
                     style={{
                       fontSize: 13,
                       fontFamily: 'SourceSerif4-SemiBold',
-                      color: '#1A1A1A',
+                      color: '#262626',
                     }}
                     numberOfLines={1}
                   >
@@ -582,7 +582,7 @@ const DashboardScreen: React.FC = () => {
                     style={{
                       fontSize: 11,
                       fontFamily: 'SourceSerif4-Regular',
-                      color: '#8A8A8A',
+                      color: '#8E8E8E',
                     }}
                     numberOfLines={1}
                   >
@@ -594,7 +594,7 @@ const DashboardScreen: React.FC = () => {
                     style={{
                       fontSize: 13,
                       fontFamily: 'SourceSerif4-Bold',
-                      color: '#1A1A1A',
+                      color: '#262626',
                     }}
                   >
                     ${booking.amount}
@@ -628,7 +628,7 @@ const DashboardScreen: React.FC = () => {
                 style={{
                   fontSize: 12,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                   textTransform: 'uppercase',
                   letterSpacing: 0.5,
                 }}
@@ -649,7 +649,7 @@ const DashboardScreen: React.FC = () => {
                 style={{
                   fontSize: 13,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                   marginTop: 2,
                 }}
               >
@@ -676,7 +676,7 @@ const DashboardScreen: React.FC = () => {
               justifyContent: 'center',
               marginTop: 14,
               paddingVertical: 10,
-              backgroundColor: '#FAF8F4',
+              backgroundColor: '#FFFFFF',
               borderRadius: 10,
               gap: 4,
             }}

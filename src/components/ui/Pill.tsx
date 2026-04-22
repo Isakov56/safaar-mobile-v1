@@ -28,8 +28,8 @@ const Pill: React.FC<PillProps> = ({
   }, [onPress]);
 
   const bgColor = selected ? color : '#FFFFFF';
-  const textColor = selected ? '#FFFFFF' : '#4A4A4A';
-  const borderColor = selected ? color : '#F2EDE4';
+  const textColor = selected ? '#FFFFFF' : '#3C3C3C';
+  const borderColor = selected ? color : '#FAFAFA';
 
   return (
     <Pressable

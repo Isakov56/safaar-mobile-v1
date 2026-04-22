@@ -177,7 +177,7 @@ const ExperiencesTab: React.FC = () => (
               style={{
                 fontSize: 12,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
               }}
             >
               {exp.duration}
@@ -187,7 +187,7 @@ const ExperiencesTab: React.FC = () => (
             style={{
               fontSize: 16,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#1A1A1A',
+              color: '#262626',
               marginTop: 6,
             }}
           >
@@ -207,7 +207,7 @@ const ExperiencesTab: React.FC = () => (
                 style={{
                   fontSize: 13,
                   fontFamily: 'SourceSerif4-SemiBold',
-                  color: '#1A1A1A',
+                  color: '#262626',
                 }}
               >
                 {exp.rating}
@@ -216,7 +216,7 @@ const ExperiencesTab: React.FC = () => (
                 style={{
                   fontSize: 12,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                 }}
               >
                 ({exp.reviewCount})
@@ -226,7 +226,7 @@ const ExperiencesTab: React.FC = () => (
               style={{
                 fontSize: 16,
                 fontFamily: 'SourceSerif4-Bold',
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             >
               ${exp.price}{' '}
@@ -234,7 +234,7 @@ const ExperiencesTab: React.FC = () => (
                 style={{
                   fontSize: 12,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                 }}
               >
                 / person
@@ -288,7 +288,7 @@ const ReviewsTab: React.FC = () => (
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             >
               {review.author}
@@ -297,7 +297,7 @@ const ReviewsTab: React.FC = () => (
               style={{
                 fontSize: 11,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
               }}
             >
               {review.date}
@@ -313,7 +313,7 @@ const ReviewsTab: React.FC = () => (
           style={{
             fontSize: 13,
             fontFamily: 'SourceSerif4-Regular',
-            color: '#4A4A4A',
+            color: '#3C3C3C',
             lineHeight: 19,
             marginTop: 10,
           }}
@@ -338,7 +338,7 @@ const HostProfileScreen: React.FC = () => {
   const [isFollowing, setIsFollowing] = useState(false);
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FAF8F4' }} edges={['top']}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }} edges={['top']}>
       <ScrollView showsVerticalScrollIndicator={false}>
         {/* Back Button */}
         <View style={{ paddingHorizontal: 16, paddingTop: 8 }}>
@@ -352,7 +352,7 @@ const HostProfileScreen: React.FC = () => {
               justifyContent: 'center',
             }}
           >
-            <ChevronLeft size={22} color="#1A1A1A" />
+            <ChevronLeft size={22} color="#262626" />
           </Pressable>
         </View>
 
@@ -368,7 +368,7 @@ const HostProfileScreen: React.FC = () => {
             style={{
               fontSize: 22,
               fontFamily: 'SourceSerif4-Bold',
-              color: '#1A1A1A',
+              color: '#262626',
               marginTop: 12,
             }}
           >
@@ -378,7 +378,7 @@ const HostProfileScreen: React.FC = () => {
             style={{
               fontSize: 14,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#4A4A4A',
+              color: '#3C3C3C',
               marginTop: 4,
               textAlign: 'center',
               paddingHorizontal: 40,
@@ -394,12 +394,12 @@ const HostProfileScreen: React.FC = () => {
               gap: 4,
             }}
           >
-            <MapPin size={12} color="#8A8A8A" />
+            <MapPin size={12} color="#8E8E8E" />
             <Text
               style={{
                 fontSize: 12,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
               }}
             >
               {MOCK_HOST.location}
@@ -427,7 +427,7 @@ const HostProfileScreen: React.FC = () => {
                 style={{
                   fontSize: 18,
                   fontFamily: 'SourceSerif4-Bold',
-                  color: '#1A1A1A',
+                  color: '#262626',
                 }}
               >
                 {stat.value}
@@ -436,7 +436,7 @@ const HostProfileScreen: React.FC = () => {
                 style={{
                   fontSize: 11,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                 }}
               >
                 {stat.label}
@@ -477,7 +477,7 @@ const HostProfileScreen: React.FC = () => {
             flexDirection: 'row',
             marginTop: 20,
             borderBottomWidth: 1,
-            borderBottomColor: '#F2EDE4',
+            borderBottomColor: '#FAFAFA',
           }}
         >
           {TABS.map((tab) => {
@@ -500,7 +500,7 @@ const HostProfileScreen: React.FC = () => {
                     fontFamily: isActive
                       ? 'SourceSerif4-SemiBold'
                       : 'SourceSerif4-Regular',
-                    color: isActive ? '#1A1A1A' : '#8A8A8A',
+                    color: isActive ? '#262626' : '#8E8E8E',
                   }}
                 >
                   {tab.label}

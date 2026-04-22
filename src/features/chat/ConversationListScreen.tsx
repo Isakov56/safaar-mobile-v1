@@ -104,7 +104,7 @@ const ConversationRow: React.FC<{
         alignItems: 'center',
         paddingHorizontal: 16,
         paddingVertical: 12,
-        backgroundColor: pressed ? '#FAF8F4' : '#FFFFFF',
+        backgroundColor: pressed ? '#FFFFFF' : '#FFFFFF',
       })}
     >
       <Avatar
@@ -127,7 +127,7 @@ const ConversationRow: React.FC<{
               fontFamily: hasUnread
                 ? 'SourceSerif4-SemiBold'
                 : 'SourceSerif4-Regular',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
             numberOfLines={1}
           >
@@ -137,7 +137,7 @@ const ConversationRow: React.FC<{
             style={{
               fontSize: 11,
               fontFamily: 'SourceSerif4-Regular',
-              color: hasUnread ? '#C4993C' : '#8A8A8A',
+              color: hasUnread ? '#C4993C' : '#8E8E8E',
             }}
           >
             {timestamp}
@@ -156,7 +156,7 @@ const ConversationRow: React.FC<{
               flex: 1,
               fontSize: 13,
               fontFamily: 'SourceSerif4-Regular',
-              color: hasUnread ? '#1A1A1A' : '#8A8A8A',
+              color: hasUnread ? '#262626' : '#8E8E8E',
               marginRight: 8,
             }}
             numberOfLines={1}
@@ -219,7 +219,7 @@ const ConversationListScreen: React.FC = () => {
       <View
         style={{
           height: 1,
-          backgroundColor: '#F2EDE4',
+          backgroundColor: '#FAFAFA',
           marginLeft: 76,
         }}
       />
@@ -241,7 +241,7 @@ const ConversationListScreen: React.FC = () => {
           style={{
             fontSize: 28,
             fontFamily: 'SourceSerif4-Bold',
-            color: '#1A1A1A',
+            color: '#262626',
           }}
         >
           Messages
@@ -254,29 +254,29 @@ const ConversationListScreen: React.FC = () => {
           style={{
             flexDirection: 'row',
             alignItems: 'center',
-            backgroundColor: '#FAF8F4',
+            backgroundColor: '#FFFFFF',
             borderRadius: 12,
             height: 40,
             paddingHorizontal: 12,
           }}
         >
-          <Search size={16} color="#8A8A8A" />
+          <Search size={16} color="#8E8E8E" />
           <TextInput
             value={searchQuery}
             onChangeText={setSearchQuery}
             placeholder="Search messages..."
-            placeholderTextColor="#8A8A8A"
+            placeholderTextColor="#8E8E8E"
             style={{
               flex: 1,
               marginLeft: 8,
               fontSize: 14,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
           />
           {searchQuery.length > 0 && (
             <Pressable onPress={() => setSearchQuery('')} hitSlop={8}>
-              <X size={14} color="#8A8A8A" />
+              <X size={14} color="#8E8E8E" />
             </Pressable>
           )}
         </View>
@@ -295,7 +295,7 @@ const ConversationListScreen: React.FC = () => {
               style={{
                 fontSize: 16,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#4A4A4A',
+                color: '#3C3C3C',
               }}
             >
               No conversations yet
@@ -304,7 +304,7 @@ const ConversationListScreen: React.FC = () => {
               style={{
                 fontSize: 13,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
                 marginTop: 4,
               }}
             >

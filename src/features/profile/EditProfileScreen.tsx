@@ -81,7 +81,7 @@ const EditProfileScreen: React.FC = () => {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FAF8F4' }} edges={['top']}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }} edges={['top']}>
       {/* Header */}
       <View
         style={{
@@ -92,17 +92,17 @@ const EditProfileScreen: React.FC = () => {
           paddingVertical: 12,
           backgroundColor: '#FFFFFF',
           borderBottomWidth: 1,
-          borderBottomColor: '#F2EDE4',
+          borderBottomColor: '#FAFAFA',
         }}
       >
         <Pressable hitSlop={8}>
-          <ChevronLeft size={24} color="#1A1A1A" />
+          <ChevronLeft size={24} color="#262626" />
         </Pressable>
         <Text
           style={{
             fontSize: 17,
             fontFamily: 'SourceSerif4-SemiBold',
-            color: '#1A1A1A',
+            color: '#262626',
           }}
         >
           Edit Profile
@@ -204,7 +204,7 @@ const EditProfileScreen: React.FC = () => {
           style={{
             fontSize: 14,
             fontFamily: 'SourceSerif4-SemiBold',
-            color: '#1A1A1A',
+            color: '#262626',
             marginBottom: 10,
           }}
         >
@@ -233,7 +233,7 @@ const EditProfileScreen: React.FC = () => {
           style={{
             fontSize: 14,
             fontFamily: 'SourceSerif4-SemiBold',
-            color: '#1A1A1A',
+            color: '#262626',
             marginBottom: 10,
           }}
         >

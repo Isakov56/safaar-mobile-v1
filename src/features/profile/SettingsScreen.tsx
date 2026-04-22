@@ -219,7 +219,7 @@ const SettingsScreen: React.FC = () => {
   ];
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FAF8F4' }} edges={['top']}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }} edges={['top']}>
       {/* Header */}
       <View
         style={{
@@ -229,11 +229,11 @@ const SettingsScreen: React.FC = () => {
           paddingVertical: 12,
           backgroundColor: '#FFFFFF',
           borderBottomWidth: 1,
-          borderBottomColor: '#F2EDE4',
+          borderBottomColor: '#FAFAFA',
         }}
       >
         <Pressable hitSlop={8}>
-          <ChevronLeft size={24} color="#1A1A1A" />
+          <ChevronLeft size={24} color="#262626" />
         </Pressable>
         <Text
           style={{
@@ -241,7 +241,7 @@ const SettingsScreen: React.FC = () => {
             textAlign: 'center',
             fontSize: 17,
             fontFamily: 'SourceSerif4-SemiBold',
-            color: '#1A1A1A',
+            color: '#262626',
           }}
         >
           Settings
@@ -260,7 +260,7 @@ const SettingsScreen: React.FC = () => {
               style={{
                 fontSize: 12,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
                 textTransform: 'uppercase',
                 letterSpacing: 1,
                 paddingHorizontal: 16,
@@ -294,14 +294,14 @@ const SettingsScreen: React.FC = () => {
                       alignItems: 'center',
                       paddingHorizontal: 14,
                       paddingVertical: 13,
-                      backgroundColor: pressed ? '#FAF8F4' : '#FFFFFF',
+                      backgroundColor: pressed ? '#FFFFFF' : '#FFFFFF',
                       borderBottomWidth: isLast ? 0 : 1,
-                      borderBottomColor: '#F2EDE4',
+                      borderBottomColor: '#FAFAFA',
                     })}
                   >
                     <Icon
                       size={18}
-                      color={row.danger ? '#C62828' : '#4A4A4A'}
+                      color={row.danger ? '#C62828' : '#3C3C3C'}
                     />
                     <Text
                       style={{
@@ -309,7 +309,7 @@ const SettingsScreen: React.FC = () => {
                         marginLeft: 12,
                         fontSize: 15,
                         fontFamily: 'SourceSerif4-Regular',
-                        color: row.danger ? '#C62828' : '#1A1A1A',
+                        color: row.danger ? '#C62828' : '#262626',
                       }}
                     >
                       {row.label}
@@ -320,7 +320,7 @@ const SettingsScreen: React.FC = () => {
                         style={{
                           fontSize: 13,
                           fontFamily: 'SourceSerif4-Regular',
-                          color: '#8A8A8A',
+                          color: '#8E8E8E',
                           marginRight: 4,
                         }}
                       >
@@ -329,14 +329,14 @@ const SettingsScreen: React.FC = () => {
                     )}
 
                     {row.type === 'navigate' && (
-                      <ChevronRight size={16} color="#8A8A8A" />
+                      <ChevronRight size={16} color="#8E8E8E" />
                     )}
 
                     {row.type === 'toggle' && (
                       <Switch
                         value={row.value}
                         onValueChange={row.onToggle}
-                        trackColor={{ false: '#F2EDE4', true: '#E8D5A8' }}
+                        trackColor={{ false: '#FAFAFA', true: '#E8D5A8' }}
                         thumbColor={row.value ? '#C4993C' : '#FFFFFF'}
                       />
                     )}

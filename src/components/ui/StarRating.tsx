@@ -106,7 +106,7 @@ const StarRating: React.FC<StarRatingProps> = ({
           style={{
             fontSize: 13,
             fontFamily: 'SourceSerif4-Regular',
-            color: '#8A8A8A',
+            color: '#8E8E8E',
             marginLeft: 4,
           }}
         >

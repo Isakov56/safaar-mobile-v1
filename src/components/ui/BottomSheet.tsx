@@ -168,7 +168,7 @@ const BottomSheet: React.FC<BottomSheetProps> = ({
                 width: 40,
                 height: 4,
                 borderRadius: 2,
-                backgroundColor: '#F2EDE4',
+                backgroundColor: '#FAFAFA',
               }}
             />
           </View>
@@ -183,20 +183,20 @@ const BottomSheet: React.FC<BottomSheetProps> = ({
                 paddingHorizontal: 16,
                 paddingBottom: 12,
                 borderBottomWidth: 1,
-                borderBottomColor: '#F2EDE4',
+                borderBottomColor: '#FAFAFA',
               }}
             >
               <Text
                 style={{
                   fontSize: 18,
                   fontFamily: 'SourceSerif4-SemiBold',
-                  color: '#1A1A1A',
+                  color: '#262626',
                 }}
               >
                 {title}
               </Text>
               <Pressable onPress={close} hitSlop={8}>
-                <X size={22} color="#8A8A8A" />
+                <X size={22} color="#8E8E8E" />
               </Pressable>
             </View>
           )}

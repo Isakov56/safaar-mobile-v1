@@ -216,7 +216,7 @@ const SectionHeader: React.FC<{ title: string; onSeeAll?: () => void }> = ({
       marginTop: 24,
     }}
   >
-    <Text style={{ fontFamily: 'SourceSerif4-Bold', fontSize: 20, color: '#1A1A1A' }}>
+    <Text style={{ fontFamily: 'SourceSerif4-Bold', fontSize: 20, color: '#262626' }}>
       {title}
     </Text>
     {onSeeAll && (
@@ -253,12 +253,12 @@ const CulturePaths: React.FC = () => (
               justifyContent: 'center',
             }}
           >
-            <Icon size={24} color="#1A1A1A" />
+            <Icon size={24} color="#262626" />
             <Text
               style={{
                 fontFamily: 'SourceSerif4-SemiBold',
                 fontSize: 11,
-                color: '#1A1A1A',
+                color: '#262626',
                 marginTop: 6,
               }}
             >
@@ -413,18 +413,18 @@ const FreeCulturalMoments: React.FC = () => (
                 FREE
               </Text>
             </View>
-            <Text style={{ fontSize: 11, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+            <Text style={{ fontSize: 11, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
               {item.time}
             </Text>
           </View>
           <Text
-            style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 15, color: '#1A1A1A' }}
+            style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 15, color: '#262626' }}
             numberOfLines={1}
           >
             {item.title}
           </Text>
           <Text
-            style={{ fontSize: 13, color: '#4A4A4A', fontFamily: 'SourceSerif4-Regular', marginTop: 4 }}
+            style={{ fontSize: 13, color: '#3C3C3C', fontFamily: 'SourceSerif4-Regular', marginTop: 4 }}
             numberOfLines={2}
           >
             {item.description}
@@ -434,7 +434,7 @@ const FreeCulturalMoments: React.FC = () => (
               source={{ uri: item.hostAvatar }}
               style={{ width: 24, height: 24, borderRadius: 12, marginRight: 8 }}
             />
-            <Text style={{ fontSize: 12, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+            <Text style={{ fontSize: 12, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
               Hosted by {item.host}
             </Text>
           </View>
@@ -468,17 +468,17 @@ const WorkshopsGrid: React.FC = () => {
             />
             <View style={{ padding: 12 }}>
               <Text
-                style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 13, color: '#1A1A1A' }}
+                style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 13, color: '#262626' }}
                 numberOfLines={2}
               >
                 {item.title}
               </Text>
               <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 8 }}>
                 <Star size={12} color="#C4993C" fill="#C4993C" />
-                <Text style={{ fontSize: 11, color: '#4A4A4A', marginLeft: 3, fontFamily: 'SourceSerif4-Regular' }}>
+                <Text style={{ fontSize: 11, color: '#3C3C3C', marginLeft: 3, fontFamily: 'SourceSerif4-Regular' }}>
                   {item.rating}
                 </Text>
-                <Text style={{ fontSize: 11, color: '#8A8A8A', marginLeft: 8, fontFamily: 'SourceSerif4-Regular' }}>
+                <Text style={{ fontSize: 11, color: '#8E8E8E', marginLeft: 8, fontFamily: 'SourceSerif4-Regular' }}>
                   {item.duration}
                 </Text>
               </View>
@@ -486,7 +486,7 @@ const WorkshopsGrid: React.FC = () => {
                 style={{
                   fontFamily: 'SourceSerif4-Bold',
                   fontSize: 14,
-                  color: '#1A1A1A',
+                  color: '#262626',
                   marginTop: 4,
                 }}
               >
@@ -531,7 +531,7 @@ const TravelerStories: React.FC = () => (
             style={{
               fontFamily: 'SourceSerif4-Regular',
               fontSize: 14,
-              color: '#1A1A1A',
+              color: '#262626',
               fontStyle: 'italic',
               lineHeight: 20,
             }}
@@ -547,10 +547,10 @@ const TravelerStories: React.FC = () => (
               style={{ width: 32, height: 32, borderRadius: 16, marginRight: 8 }}
             />
             <View>
-              <Text style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 13, color: '#1A1A1A' }}>
+              <Text style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 13, color: '#262626' }}>
                 {item.author}
               </Text>
-              <Text style={{ fontSize: 11, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+              <Text style={{ fontSize: 11, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
                 {item.from}
               </Text>
             </View>
@@ -559,14 +559,14 @@ const TravelerStories: React.FC = () => (
           <View
             style={{
               marginTop: 8,
-              backgroundColor: '#F2EDE4',
+              backgroundColor: '#FAFAFA',
               borderRadius: 8,
               paddingHorizontal: 8,
               paddingVertical: 4,
               alignSelf: 'flex-start',
             }}
           >
-            <Text style={{ fontSize: 10, color: '#8A8A8A', fontFamily: 'SourceSerif4-SemiBold' }}>
+            <Text style={{ fontSize: 10, color: '#8E8E8E', fontFamily: 'SourceSerif4-SemiBold' }}>
               {item.experienceTitle}
             </Text>
           </View>

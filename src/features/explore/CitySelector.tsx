@@ -73,30 +73,30 @@ const CitySelector: React.FC<CitySelectorProps> = ({
                 style={{
                   fontFamily: 'SourceSerif4-Bold',
                   fontSize: 20,
-                  color: '#1A1A1A',
+                  color: '#262626',
                 }}
               >
                 Choose City
               </Text>
               <Pressable onPress={onClose} hitSlop={12}>
-                <X size={22} color="#1A1A1A" />
+                <X size={22} color="#262626" />
               </Pressable>
             </View>
 
             {/* Search */}
             <View className="mx-4 mb-3">
               <View className="flex-row items-center bg-canvas-deep rounded-xl px-3" style={{ height: 44 }}>
-                <Search size={16} color="#8A8A8A" />
+                <Search size={16} color="#8E8E8E" />
                 <TextInput
                   value={query}
                   onChangeText={setQuery}
                   placeholder="Search cities..."
-                  placeholderTextColor="#8A8A8A"
+                  placeholderTextColor="#8E8E8E"
                   style={{
                     flex: 1,
                     marginLeft: 8,
                     fontSize: 15,
-                    color: '#1A1A1A',
+                    color: '#262626',
                     fontFamily: 'SourceSerif4-Regular',
                   }}
                 />
@@ -115,7 +115,7 @@ const CitySelector: React.FC<CitySelectorProps> = ({
                 <Text style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 14, color: '#C4993C' }}>
                   Detect my location
                 </Text>
-                <Text style={{ fontSize: 11, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+                <Text style={{ fontSize: 11, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
                   Use GPS to find nearest city
                 </Text>
               </View>
@@ -141,13 +141,13 @@ const CitySelector: React.FC<CitySelectorProps> = ({
                         style={{
                           fontFamily: 'SourceSerif4-SemiBold',
                           fontSize: 16,
-                          color: isSelected ? '#C4993C' : '#1A1A1A',
+                          color: isSelected ? '#C4993C' : '#262626',
                         }}
                       >
                         {item.name}
                       </Text>
                       <Text
-                        style={{ fontSize: 12, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}
+                        style={{ fontSize: 12, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}
                       >
                         {item.country}
                       </Text>
@@ -160,7 +160,7 @@ const CitySelector: React.FC<CitySelectorProps> = ({
               }}
               ListEmptyComponent={
                 <View className="items-center py-8">
-                  <Text style={{ fontSize: 13, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+                  <Text style={{ fontSize: 13, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
                     No cities found
                   </Text>
                 </View>

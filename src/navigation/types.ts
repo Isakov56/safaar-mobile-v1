@@ -23,36 +23,40 @@ export type AuthStackParamList = {
 
 // ──────────────────────────────────────────────
 // Main Tab Navigator
+// Order: Home / Map / Create / Chat / Profile
 // ──────────────────────────────────────────────
 export type MainTabParamList = {
-  ExploreTab: NavigatorScreenParams<ExploreStackParamList>;
-  SearchTab: NavigatorScreenParams<SearchStackParamList>;
+  HomeTab: NavigatorScreenParams<HomeStackParamList>;
+  MapTab: NavigatorScreenParams<MapStackParamList>;
   CreateTab: NavigatorScreenParams<CreateStackParamList>;
-  ActivityTab: NavigatorScreenParams<ActivityStackParamList>;
+  ChatTab: NavigatorScreenParams<ChatStackParamList>;
   ProfileTab: NavigatorScreenParams<ProfileStackParamList>;
 };
 
 // ──────────────────────────────────────────────
-// Explore Stack
+// Home Stack (Live Now + Do Safaar live inside HomeScreen)
 // ──────────────────────────────────────────────
-export type ExploreStackParamList = {
+export type HomeStackParamList = {
   Home: undefined;
   CityPulse: { cityId: string };
   ExperienceDetail: { experienceId: string };
   HostProfile: { userId: string };
   Checkout: { experienceId: string; slotId: string };
   BookingConfirmation: { bookingId: string };
+  Search: undefined;
+  SearchResults: { query: string; category?: string };
+  Activity: undefined;
+  Conversation: { id: string };
+  ConversationsHub: undefined;
+  EventsHub: undefined;
 };
 
 // ──────────────────────────────────────────────
-// Search Stack
+// Map Stack
 // ──────────────────────────────────────────────
-export type SearchStackParamList = {
-  SearchHome: undefined;
-  SearchResults: { query: string; category?: string };
-  CityPulse: { cityId: string };
-  ExperienceDetail: { experienceId: string };
-  HostProfile: { userId: string };
+export type MapStackParamList = {
+  MapHome: undefined;
+  EventChat: { eventId: string };
 };
 
 // ──────────────────────────────────────────────
@@ -66,11 +70,10 @@ export type CreateStackParamList = {
 };
 
 // ──────────────────────────────────────────────
-// Activity Stack
+// Chat Stack
 // ──────────────────────────────────────────────
-export type ActivityStackParamList = {
-  ActivityHome: undefined;
-  BookingDetail: { bookingId: string };
+export type ChatStackParamList = {
+  ChatHome: undefined;
   ChatThread: { threadId: string };
 };
 
@@ -84,4 +87,5 @@ export type ProfileStackParamList = {
   BookingHistory: undefined;
   HostDashboard: undefined;
   HostProfile: { userId: string };
+  Activity: undefined;
 };

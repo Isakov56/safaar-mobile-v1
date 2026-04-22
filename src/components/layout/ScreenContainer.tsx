@@ -37,7 +37,7 @@ const ScreenContainer: React.FC<ScreenContainerProps> = ({
   testID,
 }) => {
   const insets = useSafeAreaInsets();
-  const resolvedBg = backgroundColor ?? bgColor ?? '#FAF8F4';
+  const resolvedBg = backgroundColor ?? bgColor ?? '#FFFFFF';
 
   const safeAreaStyle: ViewStyle = {
     paddingTop: edges.includes('top') ? insets.top : 0,

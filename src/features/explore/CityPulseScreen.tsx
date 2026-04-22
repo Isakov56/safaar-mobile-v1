@@ -116,7 +116,7 @@ const SectionHeader: React.FC<{ title: string; onSeeAll?: () => void }> = ({
   onSeeAll,
 }) => (
   <View className="flex-row items-center justify-between px-4 mb-3 mt-6">
-    <Text style={{ fontFamily: 'SourceSerif4-Bold', fontSize: 20, color: '#1A1A1A' }}>
+    <Text style={{ fontFamily: 'SourceSerif4-Bold', fontSize: 20, color: '#262626' }}>
       {title}
     </Text>
     {onSeeAll && (
@@ -149,7 +149,7 @@ const CityPulseScreen: React.FC = () => {
               left: 0,
               right: 0,
               bottom: 0,
-              backgroundColor: '#1A1A1A',
+              backgroundColor: '#262626',
             }}
           />
 
@@ -224,7 +224,7 @@ const CityPulseScreen: React.FC = () => {
                     style={{
                       fontFamily: 'SourceSerif4-Regular',
                       fontSize: 11,
-                      color: '#8A8A8A',
+                      color: '#8E8E8E',
                     }}
                   >
                     {stat.label}
@@ -270,7 +270,7 @@ const CityPulseScreen: React.FC = () => {
                     style={{
                       fontFamily: 'SourceSerif4-SemiBold',
                       fontSize: 14,
-                      color: '#1A1A1A',
+                      color: '#262626',
                     }}
                     numberOfLines={2}
                   >
@@ -278,11 +278,11 @@ const CityPulseScreen: React.FC = () => {
                   </Text>
                 </View>
                 <View className="flex-row items-center">
-                  <Users size={12} color="#8A8A8A" />
+                  <Users size={12} color="#8E8E8E" />
                   <Text
                     style={{
                       fontSize: 11,
-                      color: '#8A8A8A',
+                      color: '#8E8E8E',
                       marginLeft: 4,
                       fontFamily: 'SourceSerif4-Regular',
                     }}
@@ -306,17 +306,17 @@ const CityPulseScreen: React.FC = () => {
               />
               <View className="flex-1">
                 <View className="flex-row items-center justify-between">
-                  <Text style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 14, color: '#1A1A1A' }}>
+                  <Text style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 14, color: '#262626' }}>
                     {story.author}
                   </Text>
-                  <Text style={{ fontSize: 11, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+                  <Text style={{ fontSize: 11, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
                     {story.time}
                   </Text>
                 </View>
                 <Text
                   style={{
                     fontSize: 13,
-                    color: '#4A4A4A',
+                    color: '#3C3C3C',
                     fontFamily: 'SourceSerif4-Regular',
                     marginTop: 2,
                   }}
@@ -326,7 +326,7 @@ const CityPulseScreen: React.FC = () => {
                 </Text>
                 <View className="flex-row items-center mt-1">
                   <Star size={12} color="#C4993C" fill="#C4993C" />
-                  <Text style={{ fontSize: 11, color: '#8A8A8A', marginLeft: 4, fontFamily: 'SourceSerif4-Regular' }}>
+                  <Text style={{ fontSize: 11, color: '#8E8E8E', marginLeft: 4, fontFamily: 'SourceSerif4-Regular' }}>
                     {story.likes} likes
                   </Text>
                 </View>
@@ -346,10 +346,10 @@ const CityPulseScreen: React.FC = () => {
               <View className="flex-row items-center">
                 <Clock size={16} color="#C4993C" />
                 <View className="ml-3">
-                  <Text style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 14, color: '#1A1A1A' }}>
+                  <Text style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 14, color: '#262626' }}>
                     {pick.title}
                   </Text>
-                  <Text style={{ fontSize: 12, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+                  <Text style={{ fontSize: 12, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
                     {pick.time}
                   </Text>
                 </View>
@@ -358,7 +358,7 @@ const CityPulseScreen: React.FC = () => {
                 style={{
                   fontFamily: 'SourceSerif4-Bold',
                   fontSize: 14,
-                  color: pick.price === 'Free' ? '#2E7D32' : '#1A1A1A',
+                  color: pick.price === 'Free' ? '#2E7D32' : '#262626',
                 }}
               >
                 {pick.price}
@@ -400,17 +400,17 @@ const CityPulseScreen: React.FC = () => {
                     marginLeft: -10,
                   }}
                 >
-                  <Text style={{ fontSize: 11, fontFamily: 'SourceSerif4-Bold', color: '#8A8A8A' }}>
+                  <Text style={{ fontSize: 11, fontFamily: 'SourceSerif4-Bold', color: '#8E8E8E' }}>
                     +{MOCK_DATA.newArrivals.length - 4}
                   </Text>
                 </View>
               )}
             </View>
             <View>
-              <Text style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 14, color: '#1A1A1A' }}>
+              <Text style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 14, color: '#262626' }}>
                 {MOCK_DATA.newArrivals.length} travelers arrived
               </Text>
-              <Text style={{ fontSize: 12, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+              <Text style={{ fontSize: 12, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
                 in Tashkent today
               </Text>
             </View>

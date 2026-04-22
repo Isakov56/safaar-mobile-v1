@@ -5,16 +5,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Instagram-inspired: pure white surface, near-black ink, gray hairlines
         ink: {
-          DEFAULT: '#1A1A1A',
-          soft: '#4A4A4A',
-          muted: '#8A8A8A',
+          DEFAULT: '#262626',
+          soft: '#3C3C3C',
+          muted: '#8E8E8E',
         },
         surface: '#FFFFFF',
         canvas: {
-          DEFAULT: '#FAF8F4',
-          deep: '#F2EDE4',
+          DEFAULT: '#FFFFFF',
+          deep: '#FAFAFA',
         },
+        line: '#DBDBDB', // hairline border
+        link: '#0095F6', // IG blue for actions / links
+        story: '#E1306C', // IG pink for unwatched story ring
+        // Legacy gold accent — used sparingly; kept for back-compat with screens we haven't pivoted yet
         gold: {
           DEFAULT: '#C4993C',
           soft: '#E8D5A8',

@@ -147,7 +147,7 @@ const BookingConfirmationScreen: React.FC = () => {
 
   return (
     <View className="flex-1 bg-canvas">
-      <StatusBar barStyle="dark-content" backgroundColor="#FAF8F4" />
+      <StatusBar barStyle="dark-content" backgroundColor="#FFFFFF" />
 
       {/* Confetti */}
       {confettiParticles.map((p) => (
@@ -205,7 +205,7 @@ const BookingConfirmationScreen: React.FC = () => {
             style={{
               fontFamily: 'SourceSerif4-Bold',
               fontSize: 26,
-              color: '#1A1A1A',
+              color: '#262626',
               textAlign: 'center',
             }}
           >
@@ -215,7 +215,7 @@ const BookingConfirmationScreen: React.FC = () => {
             style={{
               fontFamily: 'SourceSerif4-Regular',
               fontSize: 14,
-              color: '#8A8A8A',
+              color: '#8E8E8E',
               textAlign: 'center',
               marginTop: 8,
             }}
@@ -238,7 +238,7 @@ const BookingConfirmationScreen: React.FC = () => {
               style={{
                 fontFamily: 'SourceSerif4-SemiBold',
                 fontSize: 16,
-                color: '#1A1A1A',
+                color: '#262626',
                 textAlign: 'center',
                 marginBottom: 16,
               }}
@@ -255,10 +255,10 @@ const BookingConfirmationScreen: React.FC = () => {
                   <Calendar size={16} color="#C4993C" />
                 </View>
                 <View>
-                  <Text style={{ fontSize: 11, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+                  <Text style={{ fontSize: 11, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
                     Date
                   </Text>
-                  <Text style={{ fontSize: 14, color: '#1A1A1A', fontFamily: 'SourceSerif4-SemiBold' }}>
+                  <Text style={{ fontSize: 14, color: '#262626', fontFamily: 'SourceSerif4-SemiBold' }}>
                     {MOCK_CONFIRMATION.date}
                   </Text>
                 </View>
@@ -272,10 +272,10 @@ const BookingConfirmationScreen: React.FC = () => {
                   <Clock size={16} color="#C4993C" />
                 </View>
                 <View>
-                  <Text style={{ fontSize: 11, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+                  <Text style={{ fontSize: 11, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
                     Time
                   </Text>
-                  <Text style={{ fontSize: 14, color: '#1A1A1A', fontFamily: 'SourceSerif4-SemiBold' }}>
+                  <Text style={{ fontSize: 14, color: '#262626', fontFamily: 'SourceSerif4-SemiBold' }}>
                     {MOCK_CONFIRMATION.time}
                   </Text>
                 </View>
@@ -289,10 +289,10 @@ const BookingConfirmationScreen: React.FC = () => {
                   <User size={16} color="#C4993C" />
                 </View>
                 <View>
-                  <Text style={{ fontSize: 11, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+                  <Text style={{ fontSize: 11, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
                     Host
                   </Text>
-                  <Text style={{ fontSize: 14, color: '#1A1A1A', fontFamily: 'SourceSerif4-SemiBold' }}>
+                  <Text style={{ fontSize: 14, color: '#262626', fontFamily: 'SourceSerif4-SemiBold' }}>
                     {MOCK_CONFIRMATION.host}
                   </Text>
                 </View>
@@ -300,7 +300,7 @@ const BookingConfirmationScreen: React.FC = () => {
             </View>
 
             <View className="mt-4 pt-3 border-t border-canvas-deep items-center">
-              <Text style={{ fontSize: 11, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+              <Text style={{ fontSize: 11, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
                 Booking reference
               </Text>
               <Text style={{ fontFamily: 'SourceSerif4-Bold', fontSize: 14, color: '#C4993C', marginTop: 2 }}>

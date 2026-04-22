@@ -74,7 +74,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({
             style={{
               fontSize: 15,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
           >
             {review.reviewer.name}
@@ -85,7 +85,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({
                 style={{
                   fontSize: 11,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                   marginRight: 6,
                 }}
               >
@@ -96,7 +96,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({
               style={{
                 fontSize: 11,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
               }}
             >
               {formatDate(review.createdAt)}
@@ -113,7 +113,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({
         style={{
           fontSize: 15,
           fontFamily: 'SourceSerif4-Regular',
-          color: '#1A1A1A',
+          color: '#262626',
           lineHeight: 22,
         }}
       >

@@ -165,7 +165,7 @@ const ExperienceListCard: React.FC<{ item: SearchResult }> = ({ item }) => (
           style={{
             fontSize: 14,
             fontFamily: 'SourceSerif4-SemiBold',
-            color: '#1A1A1A',
+            color: '#262626',
             marginTop: 4,
           }}
           numberOfLines={1}
@@ -185,7 +185,7 @@ const ExperienceListCard: React.FC<{ item: SearchResult }> = ({ item }) => (
             style={{
               fontSize: 11,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#8A8A8A',
+              color: '#8E8E8E',
             }}
           >
             {item.host.name}
@@ -205,7 +205,7 @@ const ExperienceListCard: React.FC<{ item: SearchResult }> = ({ item }) => (
               style={{
                 fontSize: 12,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             >
               {item.rating}
@@ -214,19 +214,19 @@ const ExperienceListCard: React.FC<{ item: SearchResult }> = ({ item }) => (
               style={{
                 fontSize: 11,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
               }}
             >
               ({item.reviewCount})
             </Text>
           </View>
           <View style={{ flexDirection: 'row', alignItems: 'center', gap: 2 }}>
-            <Clock size={11} color="#8A8A8A" />
+            <Clock size={11} color="#8E8E8E" />
             <Text
               style={{
                 fontSize: 11,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
               }}
             >
               {item.duration}
@@ -237,7 +237,7 @@ const ExperienceListCard: React.FC<{ item: SearchResult }> = ({ item }) => (
           style={{
             fontSize: 14,
             fontFamily: 'SourceSerif4-Bold',
-            color: '#1A1A1A',
+            color: '#262626',
             marginTop: 6,
           }}
         >
@@ -246,7 +246,7 @@ const ExperienceListCard: React.FC<{ item: SearchResult }> = ({ item }) => (
             style={{
               fontSize: 11,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#8A8A8A',
+              color: '#8E8E8E',
             }}
           >
             / person
@@ -291,7 +291,7 @@ const SearchScreen: React.FC = () => {
   ];
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FAF8F4' }} edges={['top']}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }} edges={['top']}>
       {/* Search Bar */}
       <View style={{ paddingHorizontal: 16, paddingTop: 8, paddingBottom: 4 }}>
         <View
@@ -303,26 +303,26 @@ const SearchScreen: React.FC = () => {
             height: 48,
             paddingHorizontal: 14,
             borderWidth: 1,
-            borderColor: '#F2EDE4',
+            borderColor: '#FAFAFA',
           }}
         >
-          <Search size={18} color="#8A8A8A" />
+          <Search size={18} color="#8E8E8E" />
           <TextInput
             value={query}
             onChangeText={setQuery}
             placeholder="Search experiences, hosts, places..."
-            placeholderTextColor="#8A8A8A"
+            placeholderTextColor="#8E8E8E"
             style={{
               flex: 1,
               marginLeft: 10,
               fontSize: 14,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
           />
           {query.length > 0 && (
             <Pressable onPress={() => setQuery('')} hitSlop={8}>
-              <X size={16} color="#8A8A8A" />
+              <X size={16} color="#8E8E8E" />
             </Pressable>
           )}
         </View>
@@ -333,7 +333,7 @@ const SearchScreen: React.FC = () => {
         style={{
           paddingVertical: 10,
           borderBottomWidth: 1,
-          borderBottomColor: '#F2EDE4',
+          borderBottomColor: '#FAFAFA',
         }}
       >
         <ScrollView
@@ -352,7 +352,7 @@ const SearchScreen: React.FC = () => {
               borderRadius: 8,
               overflow: 'hidden',
               borderWidth: 1,
-              borderColor: '#F2EDE4',
+              borderColor: '#FAFAFA',
               marginRight: 4,
             }}
           >
@@ -361,12 +361,12 @@ const SearchScreen: React.FC = () => {
               style={{
                 paddingHorizontal: 10,
                 paddingVertical: 6,
-                backgroundColor: viewMode === 'list' ? '#1A1A1A' : '#FFFFFF',
+                backgroundColor: viewMode === 'list' ? '#262626' : '#FFFFFF',
               }}
             >
               <List
                 size={16}
-                color={viewMode === 'list' ? '#FFFFFF' : '#4A4A4A'}
+                color={viewMode === 'list' ? '#FFFFFF' : '#3C3C3C'}
               />
             </Pressable>
             <Pressable
@@ -374,12 +374,12 @@ const SearchScreen: React.FC = () => {
               style={{
                 paddingHorizontal: 10,
                 paddingVertical: 6,
-                backgroundColor: viewMode === 'map' ? '#1A1A1A' : '#FFFFFF',
+                backgroundColor: viewMode === 'map' ? '#262626' : '#FFFFFF',
               }}
             >
               <Map
                 size={16}
-                color={viewMode === 'map' ? '#FFFFFF' : '#4A4A4A'}
+                color={viewMode === 'map' ? '#FFFFFF' : '#3C3C3C'}
               />
             </Pressable>
           </View>
@@ -412,12 +412,12 @@ const SearchScreen: React.FC = () => {
                 paddingTop: 60,
               }}
             >
-              <Search size={40} color="#8A8A8A" />
+              <Search size={40} color="#8E8E8E" />
               <Text
                 style={{
                   fontSize: 16,
                   fontFamily: 'SourceSerif4-SemiBold',
-                  color: '#4A4A4A',
+                  color: '#3C3C3C',
                   marginTop: 12,
                 }}
               >
@@ -427,7 +427,7 @@ const SearchScreen: React.FC = () => {
                 style={{
                   fontSize: 13,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                   marginTop: 4,
                 }}
               >
@@ -440,17 +440,17 @@ const SearchScreen: React.FC = () => {
         <View
           style={{
             flex: 1,
-            backgroundColor: '#F2EDE4',
+            backgroundColor: '#FAFAFA',
             alignItems: 'center',
             justifyContent: 'center',
           }}
         >
-          <Map size={48} color="#8A8A8A" />
+          <Map size={48} color="#8E8E8E" />
           <Text
             style={{
               fontSize: 18,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#4A4A4A',
+              color: '#3C3C3C',
               marginTop: 12,
             }}
           >
@@ -460,7 +460,7 @@ const SearchScreen: React.FC = () => {
             style={{
               fontSize: 13,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#8A8A8A',
+              color: '#8E8E8E',
               marginTop: 4,
             }}
           >
@@ -484,7 +484,7 @@ const SearchScreen: React.FC = () => {
                 width: 36,
                 height: 4,
                 borderRadius: 2,
-                backgroundColor: '#F2EDE4',
+                backgroundColor: '#FAFAFA',
               }}
             />
           </View>
@@ -498,20 +498,20 @@ const SearchScreen: React.FC = () => {
               paddingHorizontal: 16,
               paddingVertical: 12,
               borderBottomWidth: 1,
-              borderBottomColor: '#F2EDE4',
+              borderBottomColor: '#FAFAFA',
             }}
           >
             <Text
               style={{
                 fontSize: 18,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             >
               Filters
             </Text>
             <Pressable onPress={() => setShowFilterSheet(false)} hitSlop={8}>
-              <X size={22} color="#1A1A1A" />
+              <X size={22} color="#262626" />
             </Pressable>
           </View>
 
@@ -521,7 +521,7 @@ const SearchScreen: React.FC = () => {
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
                 marginBottom: 10,
               }}
             >
@@ -554,7 +554,7 @@ const SearchScreen: React.FC = () => {
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
                 marginBottom: 10,
               }}
             >
@@ -578,7 +578,7 @@ const SearchScreen: React.FC = () => {
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
                 marginBottom: 10,
               }}
             >
@@ -601,7 +601,7 @@ const SearchScreen: React.FC = () => {
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
                 marginBottom: 10,
               }}
             >

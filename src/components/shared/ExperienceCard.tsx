@@ -231,12 +231,12 @@ const GridCard: React.FC<ExperienceCardProps> = ({
             {category}
           </Text>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-            <Clock size={11} color="#8A8A8A" />
+            <Clock size={11} color="#8E8E8E" />
             <Text
               style={{
                 fontSize: 11,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
                 marginLeft: 2,
               }}
             >
@@ -250,7 +250,7 @@ const GridCard: React.FC<ExperienceCardProps> = ({
           style={{
             fontSize: 15,
             fontFamily: 'SourceSerif4-SemiBold',
-            color: '#1A1A1A',
+            color: '#262626',
             marginBottom: 8,
           }}
         >
@@ -262,7 +262,7 @@ const GridCard: React.FC<ExperienceCardProps> = ({
             style={{
               fontSize: 15,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
           >
             {formatPrice(pricePerPerson, isFree)}
@@ -271,7 +271,7 @@ const GridCard: React.FC<ExperienceCardProps> = ({
                 style={{
                   fontSize: 11,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                 }}
               >
                 {' /person'}
@@ -332,7 +332,7 @@ const ListCard: React.FC<ExperienceCardProps> = ({
           width: 44,
           height: 44,
           borderRadius: 12,
-          backgroundColor: '#FAF8F4',
+          backgroundColor: '#FFFFFF',
           alignItems: 'center',
           justifyContent: 'center',
           marginRight: 12,
@@ -350,7 +350,7 @@ const ListCard: React.FC<ExperienceCardProps> = ({
           style={{
             fontSize: 15,
             fontFamily: 'SourceSerif4-SemiBold',
-            color: '#1A1A1A',
+            color: '#262626',
             marginBottom: 2,
           }}
         >
@@ -361,7 +361,7 @@ const ListCard: React.FC<ExperienceCardProps> = ({
             style={{
               fontSize: 13,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#8A8A8A',
+              color: '#8E8E8E',
             }}
           >
             {host.name}
@@ -371,16 +371,16 @@ const ListCard: React.FC<ExperienceCardProps> = ({
               width: 3,
               height: 3,
               borderRadius: 1.5,
-              backgroundColor: '#8A8A8A',
+              backgroundColor: '#8E8E8E',
               marginHorizontal: 6,
             }}
           />
-          <Clock size={11} color="#8A8A8A" />
+          <Clock size={11} color="#8E8E8E" />
           <Text
             style={{
               fontSize: 13,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#8A8A8A',
+              color: '#8E8E8E',
               marginLeft: 2,
             }}
           >

@@ -42,12 +42,12 @@ const variantStyles: Record<
   outline: {
     container: 'bg-transparent border border-ink',
     text: 'text-ink',
-    iconColor: '#1A1A1A',
+    iconColor: '#262626',
   },
   ghost: {
     container: 'bg-transparent',
     text: 'text-ink',
-    iconColor: '#1A1A1A',
+    iconColor: '#262626',
   },
 };
 
@@ -117,7 +117,7 @@ const Button: React.FC<ButtonProps> = ({
       {loading ? (
         <ActivityIndicator
           size="small"
-          color={variant === 'outline' || variant === 'ghost' ? '#1A1A1A' : '#FFFFFF'}
+          color={variant === 'outline' || variant === 'ghost' ? '#262626' : '#FFFFFF'}
         />
       ) : (
         <>

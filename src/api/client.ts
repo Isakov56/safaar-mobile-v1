@@ -1,5 +1,5 @@
 import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
-import * as SecureStore from 'expo-secure-store';
+import { secureStorage as SecureStore } from '../utils/secureStorage';
 
 const API_BASE_URL = __DEV__
   ? 'http://localhost:3000/api/v1'

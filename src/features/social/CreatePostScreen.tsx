@@ -87,7 +87,7 @@ const CreatePostScreen: React.FC = () => {
   const canPost = caption.trim().length > 0 || selectedMedia.length > 0;
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FAF8F4' }} edges={['top']}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }} edges={['top']}>
       {/* Header */}
       <View
         style={{
@@ -97,18 +97,18 @@ const CreatePostScreen: React.FC = () => {
           paddingHorizontal: 16,
           paddingVertical: 12,
           borderBottomWidth: 1,
-          borderBottomColor: '#F2EDE4',
+          borderBottomColor: '#FAFAFA',
           backgroundColor: '#FFFFFF',
         }}
       >
         <Pressable hitSlop={8}>
-          <X size={24} color="#1A1A1A" />
+          <X size={24} color="#262626" />
         </Pressable>
         <Text
           style={{
             fontSize: 17,
             fontFamily: 'SourceSerif4-SemiBold',
-            color: '#1A1A1A',
+            color: '#262626',
           }}
         >
           New Post
@@ -118,7 +118,7 @@ const CreatePostScreen: React.FC = () => {
             style={{
               fontSize: 15,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: canPost ? '#C4993C' : '#8A8A8A',
+              color: canPost ? '#C4993C' : '#8E8E8E',
             }}
           >
             Post
@@ -144,14 +144,14 @@ const CreatePostScreen: React.FC = () => {
             value={caption}
             onChangeText={setCaption}
             placeholder="Share what you're experiencing..."
-            placeholderTextColor="#8A8A8A"
+            placeholderTextColor="#8E8E8E"
             multiline
             style={{
               flex: 1,
               marginLeft: 12,
               fontSize: 15,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#1A1A1A',
+              color: '#262626',
               minHeight: 80,
               textAlignVertical: 'top',
               paddingTop: 8,
@@ -219,7 +219,7 @@ const CreatePostScreen: React.FC = () => {
               backgroundColor: '#FFFFFF',
               borderRadius: 12,
               borderWidth: 1,
-              borderColor: '#F2EDE4',
+              borderColor: '#FAFAFA',
               alignItems: 'center',
               justifyContent: 'center',
             }}
@@ -229,7 +229,7 @@ const CreatePostScreen: React.FC = () => {
               style={{
                 fontSize: 12,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#4A4A4A',
+                color: '#3C3C3C',
                 marginTop: 6,
               }}
             >
@@ -244,7 +244,7 @@ const CreatePostScreen: React.FC = () => {
               backgroundColor: '#FFFFFF',
               borderRadius: 12,
               borderWidth: 1,
-              borderColor: '#F2EDE4',
+              borderColor: '#FAFAFA',
               alignItems: 'center',
               justifyContent: 'center',
             }}
@@ -254,7 +254,7 @@ const CreatePostScreen: React.FC = () => {
               style={{
                 fontSize: 12,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#4A4A4A',
+                color: '#3C3C3C',
                 marginTop: 6,
               }}
             >
@@ -276,22 +276,22 @@ const CreatePostScreen: React.FC = () => {
             backgroundColor: '#FFFFFF',
             borderRadius: 12,
             borderWidth: 1,
-            borderColor: '#F2EDE4',
+            borderColor: '#FAFAFA',
           }}
         >
-          <MapPin size={18} color={selectedLocation ? '#C4993C' : '#8A8A8A'} />
+          <MapPin size={18} color={selectedLocation ? '#C4993C' : '#8E8E8E'} />
           <Text
             style={{
               flex: 1,
               marginLeft: 10,
               fontSize: 14,
               fontFamily: 'SourceSerif4-Regular',
-              color: selectedLocation ? '#1A1A1A' : '#8A8A8A',
+              color: selectedLocation ? '#262626' : '#8E8E8E',
             }}
           >
             {selectedLocation ?? 'Add location'}
           </Text>
-          <ChevronRight size={16} color="#8A8A8A" />
+          <ChevronRight size={16} color="#8E8E8E" />
         </Pressable>
 
         {/* Location Suggestions */}
@@ -303,7 +303,7 @@ const CreatePostScreen: React.FC = () => {
               backgroundColor: '#FFFFFF',
               borderRadius: 12,
               borderWidth: 1,
-              borderColor: '#F2EDE4',
+              borderColor: '#FAFAFA',
               overflow: 'hidden',
             }}
           >
@@ -320,7 +320,7 @@ const CreatePostScreen: React.FC = () => {
                   paddingHorizontal: 14,
                   paddingVertical: 12,
                   borderBottomWidth: 1,
-                  borderBottomColor: '#F2EDE4',
+                  borderBottomColor: '#FAFAFA',
                 }}
               >
                 <MapPin size={14} color="#C4993C" />
@@ -329,7 +329,7 @@ const CreatePostScreen: React.FC = () => {
                     marginLeft: 8,
                     fontSize: 14,
                     fontFamily: 'SourceSerif4-Regular',
-                    color: '#1A1A1A',
+                    color: '#262626',
                   }}
                 >
                   {loc}

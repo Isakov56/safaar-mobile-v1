@@ -105,7 +105,7 @@ const PostCard: React.FC<PostCardProps> = ({
               style={{
                 fontSize: 15,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             >
               {post.user.name}
@@ -115,7 +115,7 @@ const PostCard: React.FC<PostCardProps> = ({
                 style={{
                   fontSize: 13,
                   fontFamily: 'SourceSerif4-Regular',
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                   marginLeft: 6,
                 }}
               >
@@ -127,7 +127,7 @@ const PostCard: React.FC<PostCardProps> = ({
             style={{
               fontSize: 11,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#8A8A8A',
+              color: '#8E8E8E',
             }}
           >
             {formatTimeAgo(post.createdAt)}
@@ -135,7 +135,7 @@ const PostCard: React.FC<PostCardProps> = ({
         </View>
 
         <Pressable hitSlop={8}>
-          <MoreHorizontal size={20} color="#8A8A8A" />
+          <MoreHorizontal size={20} color="#8E8E8E" />
         </Pressable>
       </View>
 
@@ -166,7 +166,7 @@ const PostCard: React.FC<PostCardProps> = ({
         >
           <Heart
             size={20}
-            color={post.isLiked ? '#E53935' : '#4A4A4A'}
+            color={post.isLiked ? '#E53935' : '#3C3C3C'}
             fill={post.isLiked ? '#E53935' : 'transparent'}
           />
           {post.likesCount > 0 && (
@@ -174,7 +174,7 @@ const PostCard: React.FC<PostCardProps> = ({
               style={{
                 fontSize: 13,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#4A4A4A',
+                color: '#3C3C3C',
                 marginLeft: 4,
               }}
             >
@@ -188,13 +188,13 @@ const PostCard: React.FC<PostCardProps> = ({
           hitSlop={6}
           style={{ flexDirection: 'row', alignItems: 'center', marginRight: 16 }}
         >
-          <MessageCircle size={20} color="#4A4A4A" />
+          <MessageCircle size={20} color="#3C3C3C" />
           {post.commentsCount > 0 && (
             <Text
               style={{
                 fontSize: 13,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: '#4A4A4A',
+                color: '#3C3C3C',
                 marginLeft: 4,
               }}
             >
@@ -206,11 +206,11 @@ const PostCard: React.FC<PostCardProps> = ({
         <View style={{ flex: 1 }} />
 
         <Pressable hitSlop={6} style={{ marginRight: 12 }}>
-          <Bookmark size={20} color="#4A4A4A" />
+          <Bookmark size={20} color="#3C3C3C" />
         </Pressable>
 
         <Pressable onPress={onShare} hitSlop={6}>
-          <Share2 size={20} color="#4A4A4A" />
+          <Share2 size={20} color="#3C3C3C" />
         </Pressable>
       </View>
 
@@ -221,7 +221,7 @@ const PostCard: React.FC<PostCardProps> = ({
             style={{
               fontSize: 15,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
           >
             {post.user.name}{' '}
@@ -230,7 +230,7 @@ const PostCard: React.FC<PostCardProps> = ({
             style={{
               fontSize: 15,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
           >
             {displayContent}
@@ -242,7 +242,7 @@ const PostCard: React.FC<PostCardProps> = ({
               style={{
                 fontSize: 13,
                 fontFamily: 'SourceSerif4-Regular',
-                color: '#8A8A8A',
+                color: '#8E8E8E',
                 marginTop: 2,
               }}
             >

@@ -59,7 +59,7 @@ const Toggle: React.FC<ToggleProps> = ({
       style={[
         {
           flexDirection: 'row',
-          backgroundColor: '#F2EDE4',
+          backgroundColor: '#FAFAFA',
           borderRadius: 12,
           padding: 4,
           position: 'relative',
@@ -74,7 +74,7 @@ const Toggle: React.FC<ToggleProps> = ({
           bottom: 4,
           left: 0,
           width: `${100 / segmentCount}%` as unknown as number,
-          backgroundColor: '#1A1A1A',
+          backgroundColor: '#262626',
           borderRadius: 10,
           transform: [{ translateX: slideAnim }],
         }}
@@ -98,7 +98,7 @@ const Toggle: React.FC<ToggleProps> = ({
               style={{
                 fontSize: 13,
                 fontFamily: 'SourceSerif4-SemiBold',
-                color: isSelected ? '#FFFFFF' : '#4A4A4A',
+                color: isSelected ? '#FFFFFF' : '#3C3C3C',
               }}
             >
               {option.label}

@@ -17,7 +17,7 @@ const FALLBACK_COLORS = [
   '#C4993C',
   '#2E7D32',
   '#E65100',
-  '#4A4A4A',
+  '#3C3C3C',
   '#8B6914',
   '#FF8A65',
   '#66BB6A',
@@ -49,7 +49,7 @@ const Avatar: React.FC<AvatarProps> = ({
   testID,
 }) => {
   const initials = useMemo(() => (name ? getInitials(name) : ''), [name]);
-  const bgColor = useMemo(() => (name ? getColorFromName(name) : '#8A8A8A'), [name]);
+  const bgColor = useMemo(() => (name ? getColorFromName(name) : '#8E8E8E'), [name]);
   const initialsSize = Math.round(size * 0.38);
   const dotSize = Math.max(10, Math.round(size * 0.25));
   const badgeSize = Math.max(14, Math.round(size * 0.35));

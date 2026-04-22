@@ -45,7 +45,7 @@ const Skeleton: React.FC<SkeletonProps> = ({
           width: width as number,
           height: height as number,
           borderRadius,
-          backgroundColor: '#F2EDE4',
+          backgroundColor: '#FAFAFA',
           opacity,
         },
         style,

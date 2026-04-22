@@ -34,7 +34,7 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({ message, isMine }) => {
     >
       <View
         style={{
-          backgroundColor: isMine ? '#1A1A1A' : '#F2EDE4',
+          backgroundColor: isMine ? '#262626' : '#FAFAFA',
           borderTopLeftRadius: 16,
           borderTopRightRadius: 16,
           borderBottomLeftRadius: isMine ? 16 : 4,
@@ -66,7 +66,7 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({ message, isMine }) => {
               style={{
                 fontSize: 14,
                 fontFamily: 'SourceSerif4-Regular',
-                color: isMine ? '#FFFFFF' : '#1A1A1A',
+                color: isMine ? '#FFFFFF' : '#262626',
                 lineHeight: 20,
               }}
             >
@@ -88,7 +88,7 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({ message, isMine }) => {
               style={{
                 fontSize: 10,
                 fontFamily: 'SourceSerif4-Regular',
-                color: isMine ? 'rgba(255,255,255,0.5)' : '#8A8A8A',
+                color: isMine ? 'rgba(255,255,255,0.5)' : '#8E8E8E',
               }}
             >
               {message.createdAt}

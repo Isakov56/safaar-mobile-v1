@@ -244,7 +244,7 @@ const ExperienceDetailScreen: React.FC = () => {
                   style={{
                     fontFamily: 'SourceSerif4-SemiBold',
                     fontSize: 15,
-                    color: '#1A1A1A',
+                    color: '#262626',
                   }}
                 >
                   {MOCK_EXPERIENCE.host.name}
@@ -256,7 +256,7 @@ const ExperienceDetailScreen: React.FC = () => {
               <Text
                 style={{
                   fontSize: 12,
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                   fontFamily: 'SourceSerif4-Regular',
                 }}
               >
@@ -267,14 +267,14 @@ const ExperienceDetailScreen: React.FC = () => {
                 <Text
                   style={{
                     fontSize: 12,
-                    color: '#1A1A1A',
+                    color: '#262626',
                     fontFamily: 'SourceSerif4-SemiBold',
                     marginLeft: 3,
                   }}
                 >
                   {MOCK_EXPERIENCE.host.rating}
                 </Text>
-                <Text style={{ fontSize: 11, color: '#8A8A8A', marginLeft: 4, fontFamily: 'SourceSerif4-Regular' }}>
+                <Text style={{ fontSize: 11, color: '#8E8E8E', marginLeft: 4, fontFamily: 'SourceSerif4-Regular' }}>
                   ({MOCK_EXPERIENCE.host.reviewCount} reviews)
                 </Text>
               </View>
@@ -292,7 +292,7 @@ const ExperienceDetailScreen: React.FC = () => {
             style={{
               fontFamily: 'SourceSerif4-Bold',
               fontSize: 22,
-              color: '#1A1A1A',
+              color: '#262626',
               paddingHorizontal: 16,
               marginTop: 16,
               lineHeight: 30,
@@ -307,19 +307,19 @@ const ExperienceDetailScreen: React.FC = () => {
               <View
                 style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: '#FFF3E0', marginRight: 6 }}
               />
-              <Text style={{ fontSize: 12, fontFamily: 'SourceSerif4-SemiBold', color: '#4A4A4A' }}>
+              <Text style={{ fontSize: 12, fontFamily: 'SourceSerif4-SemiBold', color: '#3C3C3C' }}>
                 {MOCK_EXPERIENCE.category}
               </Text>
             </View>
             <View className="flex-row items-center bg-canvas-deep rounded-pill px-3 py-1.5">
-              <Clock size={12} color="#8A8A8A" />
-              <Text style={{ fontSize: 12, fontFamily: 'SourceSerif4-Regular', color: '#4A4A4A', marginLeft: 4 }}>
+              <Clock size={12} color="#8E8E8E" />
+              <Text style={{ fontSize: 12, fontFamily: 'SourceSerif4-Regular', color: '#3C3C3C', marginLeft: 4 }}>
                 {MOCK_EXPERIENCE.duration}
               </Text>
             </View>
             <View className="flex-row items-center bg-canvas-deep rounded-pill px-3 py-1.5">
-              <Users size={12} color="#8A8A8A" />
-              <Text style={{ fontSize: 12, fontFamily: 'SourceSerif4-Regular', color: '#4A4A4A', marginLeft: 4 }}>
+              <Users size={12} color="#8E8E8E" />
+              <Text style={{ fontSize: 12, fontFamily: 'SourceSerif4-Regular', color: '#3C3C3C', marginLeft: 4 }}>
                 {MOCK_EXPERIENCE.groupSize}
               </Text>
             </View>
@@ -331,7 +331,7 @@ const ExperienceDetailScreen: React.FC = () => {
               style={{
                 fontSize: 15,
                 lineHeight: 22,
-                color: '#4A4A4A',
+                color: '#3C3C3C',
                 fontFamily: 'SourceSerif4-Regular',
               }}
               numberOfLines={descriptionExpanded ? undefined : 4}
@@ -349,7 +349,7 @@ const ExperienceDetailScreen: React.FC = () => {
 
           {/* What's Included */}
           <View className="px-4 mt-6">
-            <Text style={{ fontFamily: 'SourceSerif4-Bold', fontSize: 18, color: '#1A1A1A', marginBottom: 12 }}>
+            <Text style={{ fontFamily: 'SourceSerif4-Bold', fontSize: 18, color: '#262626', marginBottom: 12 }}>
               What's Included
             </Text>
             {MOCK_EXPERIENCE.included.map((item, idx) => (
@@ -360,7 +360,7 @@ const ExperienceDetailScreen: React.FC = () => {
                 >
                   <Check size={14} color="#2E7D32" />
                 </View>
-                <Text style={{ fontSize: 14, color: '#4A4A4A', fontFamily: 'SourceSerif4-Regular' }}>
+                <Text style={{ fontSize: 14, color: '#3C3C3C', fontFamily: 'SourceSerif4-Regular' }}>
                   {item}
                 </Text>
               </View>
@@ -369,7 +369,7 @@ const ExperienceDetailScreen: React.FC = () => {
 
           {/* Meeting Point */}
           <View className="px-4 mt-6">
-            <Text style={{ fontFamily: 'SourceSerif4-Bold', fontSize: 18, color: '#1A1A1A', marginBottom: 12 }}>
+            <Text style={{ fontFamily: 'SourceSerif4-Bold', fontSize: 18, color: '#262626', marginBottom: 12 }}>
               Meeting Point
             </Text>
             {/* Map Placeholder */}
@@ -377,18 +377,18 @@ const ExperienceDetailScreen: React.FC = () => {
               className="bg-canvas-deep rounded-2xl items-center justify-center"
               style={{ height: 140, marginBottom: 12 }}
             >
-              <MapPin size={32} color="#8A8A8A" />
-              <Text style={{ fontSize: 13, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular', marginTop: 4 }}>
+              <MapPin size={32} color="#8E8E8E" />
+              <Text style={{ fontSize: 13, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular', marginTop: 4 }}>
                 Map view
               </Text>
             </View>
-            <Text style={{ fontSize: 14, color: '#1A1A1A', fontFamily: 'SourceSerif4-SemiBold' }}>
+            <Text style={{ fontSize: 14, color: '#262626', fontFamily: 'SourceSerif4-SemiBold' }}>
               {MOCK_EXPERIENCE.meetingPoint.address}
             </Text>
             <Text
               style={{
                 fontSize: 13,
-                color: '#8A8A8A',
+                color: '#8E8E8E',
                 fontFamily: 'SourceSerif4-Regular',
                 marginTop: 4,
               }}
@@ -411,7 +411,7 @@ const ExperienceDetailScreen: React.FC = () => {
               style={{
                 fontFamily: 'SourceSerif4-Bold',
                 fontSize: 18,
-                color: '#1A1A1A',
+                color: '#262626',
                 paddingHorizontal: 16,
                 marginBottom: 12,
               }}
@@ -435,7 +435,7 @@ const ExperienceDetailScreen: React.FC = () => {
                 style={{
                   fontFamily: 'SourceSerif4-Bold',
                   fontSize: 18,
-                  color: '#1A1A1A',
+                  color: '#262626',
                   marginLeft: 6,
                 }}
               >
@@ -444,7 +444,7 @@ const ExperienceDetailScreen: React.FC = () => {
               <Text
                 style={{
                   fontSize: 14,
-                  color: '#8A8A8A',
+                  color: '#8E8E8E',
                   fontFamily: 'SourceSerif4-Regular',
                   marginLeft: 4,
                 }}
@@ -460,10 +460,10 @@ const ExperienceDetailScreen: React.FC = () => {
                     style={{ width: 32, height: 32, borderRadius: 16, marginRight: 10 }}
                   />
                   <View className="flex-1">
-                    <Text style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 14, color: '#1A1A1A' }}>
+                    <Text style={{ fontFamily: 'SourceSerif4-SemiBold', fontSize: 14, color: '#262626' }}>
                       {review.author}
                     </Text>
-                    <Text style={{ fontSize: 11, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+                    <Text style={{ fontSize: 11, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
                       {review.date}
                     </Text>
                   </View>
@@ -476,7 +476,7 @@ const ExperienceDetailScreen: React.FC = () => {
                 <Text
                   style={{
                     fontSize: 14,
-                    color: '#4A4A4A',
+                    color: '#3C3C3C',
                     lineHeight: 20,
                     fontFamily: 'SourceSerif4-Regular',
                   }}
@@ -508,13 +508,13 @@ const ExperienceDetailScreen: React.FC = () => {
               style={{
                 fontFamily: 'SourceSerif4-ExtraBold',
                 fontSize: 22,
-                color: '#1A1A1A',
+                color: '#262626',
               }}
             >
               ${MOCK_EXPERIENCE.price}
             </Text>
           </View>
-          <Text style={{ fontSize: 12, color: '#8A8A8A', fontFamily: 'SourceSerif4-Regular' }}>
+          <Text style={{ fontSize: 12, color: '#8E8E8E', fontFamily: 'SourceSerif4-Regular' }}>
             per person
           </Text>
         </View>

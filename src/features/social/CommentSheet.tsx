@@ -89,7 +89,7 @@ const CommentRow: React.FC<{ comment: Comment }> = ({ comment }) => (
         style={{
           fontSize: 13,
           fontFamily: 'SourceSerif4-Regular',
-          color: '#1A1A1A',
+          color: '#262626',
           lineHeight: 18,
         }}
       >
@@ -110,7 +110,7 @@ const CommentRow: React.FC<{ comment: Comment }> = ({ comment }) => (
           style={{
             fontSize: 11,
             fontFamily: 'SourceSerif4-Regular',
-            color: '#8A8A8A',
+            color: '#8E8E8E',
           }}
         >
           {comment.createdAt}
@@ -119,7 +119,7 @@ const CommentRow: React.FC<{ comment: Comment }> = ({ comment }) => (
           style={{
             fontSize: 11,
             fontFamily: 'SourceSerif4-SemiBold',
-            color: '#8A8A8A',
+            color: '#8E8E8E',
           }}
         >
           {comment.likes} likes
@@ -128,7 +128,7 @@ const CommentRow: React.FC<{ comment: Comment }> = ({ comment }) => (
           style={{
             fontSize: 11,
             fontFamily: 'SourceSerif4-SemiBold',
-            color: '#8A8A8A',
+            color: '#8E8E8E',
           }}
         >
           Reply
@@ -185,7 +185,7 @@ const CommentSheet: React.FC<CommentSheetProps> = ({
               width: 36,
               height: 4,
               borderRadius: 2,
-              backgroundColor: '#F2EDE4',
+              backgroundColor: '#FAFAFA',
             }}
           />
         </View>
@@ -196,14 +196,14 @@ const CommentSheet: React.FC<CommentSheetProps> = ({
             alignItems: 'center',
             paddingVertical: 12,
             borderBottomWidth: 1,
-            borderBottomColor: '#F2EDE4',
+            borderBottomColor: '#FAFAFA',
           }}
         >
           <Text
             style={{
               fontSize: 15,
               fontFamily: 'SourceSerif4-SemiBold',
-              color: '#1A1A1A',
+              color: '#262626',
             }}
           >
             Comments
@@ -227,7 +227,7 @@ const CommentSheet: React.FC<CommentSheetProps> = ({
             paddingHorizontal: 16,
             paddingVertical: 10,
             borderTopWidth: 1,
-            borderTopColor: '#F2EDE4',
+            borderTopColor: '#FAFAFA',
             backgroundColor: '#FFFFFF',
           }}
         >
@@ -237,17 +237,17 @@ const CommentSheet: React.FC<CommentSheetProps> = ({
             value={inputText}
             onChangeText={setInputText}
             placeholder="Add a comment..."
-            placeholderTextColor="#8A8A8A"
+            placeholderTextColor="#8E8E8E"
             style={{
               flex: 1,
               marginLeft: 10,
               marginRight: 10,
               fontSize: 14,
               fontFamily: 'SourceSerif4-Regular',
-              color: '#1A1A1A',
+              color: '#262626',
               paddingVertical: 8,
               paddingHorizontal: 12,
-              backgroundColor: '#FAF8F4',
+              backgroundColor: '#FFFFFF',
               borderRadius: 20,
             }}
             returnKeyType="send"
@@ -260,7 +260,7 @@ const CommentSheet: React.FC<CommentSheetProps> = ({
           >
             <Send
               size={20}
-              color={inputText.trim() ? '#C4993C' : '#8A8A8A'}
+              color={inputText.trim() ? '#C4993C' : '#8E8E8E'}
             />
           </Pressable>
         </View>

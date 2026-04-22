@@ -51,7 +51,7 @@ const FloatingBar: React.FC<FloatingBarProps> = ({
           right: 0,
           backgroundColor: '#FFFFFF',
           borderTopWidth: 1,
-          borderTopColor: '#F2EDE4',
+          borderTopColor: '#FAFAFA',
           paddingHorizontal: 16,
           paddingTop: 12,
           paddingBottom: Math.max(insets.bottom, 12),
